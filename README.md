@@ -1,5 +1,5 @@
 # Space_Duels
-A card game that I invented and am starting to convert it to a video game
+A card game that I invented and that I am starting to convert it to a video game
 
 ## Note
 This is currently in progress, and is in ultra - pre - alpha
@@ -8,6 +8,7 @@ This is currently in progress, and is in ultra - pre - alpha
 To re-compile this, here is my recommended command using the gcc compiler:
 
 <pre> g++ *.cpp -lncurses -o Space_Duels </pre>
+
 And to run it:
 
 <pre> ./Space_Duels </pre>
