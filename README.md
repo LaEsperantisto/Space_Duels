@@ -5,7 +5,7 @@ A card game that I invented and am starting to convert it to a video game
 This is currently in progress, and is in ultra - pre - alpha
 
 ## Compiling
-To re-compile this, here is my reccomended command using the gcc compiler:
+To re-compile this, here is my recommended command using the gcc compiler:
 
 <pre> g++ *.cpp -lncurses -o Space_Duels </pre>
 And to run it:
