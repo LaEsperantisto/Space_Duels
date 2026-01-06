@@ -41,10 +41,10 @@ public:
     int get_alignment_index() const;
 
     [[nodiscard]]
-    int get_width() const;
+    unsigned int get_width() const;
 
     [[nodiscard]]
-    int get_height() const;
+    unsigned int get_height() const;
 
     [[nodiscard]]
     bool is_legal() const;

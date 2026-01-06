@@ -1,6 +1,6 @@
 #include "utils.h"
 
-#include <iostream>
+// #include <iostream>
 #include <ncurses.h>
 
 #include "Ship.h"
@@ -58,11 +58,11 @@ std::pair<Ship, Ship> align_ships(Ship ship1, Ship ship2) {
     while (align_1 != align_2) {
         if (align_1 > align_2) {
             s2.insert(s2.begin(), make_blank_column(ship2.get_height()));
-            ship2.set_cards(std::move(s2));
+            ship2.set_cards(s2);
             align_2 = ship2.get_alignment_index();
         } else {
             s1.insert(s1.begin(), make_blank_column(ship1.get_height()));
-            ship1.set_cards(std::move(s1));
+            ship1.set_cards(s1);
             align_1 = ship1.get_alignment_index();
         }
     }

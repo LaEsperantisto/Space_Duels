@@ -8,8 +8,7 @@
 //     update_data();
 // }
 
-Ship::Ship() {
-}
+Ship::Ship() = default;
 
 
 /*
@@ -75,11 +74,11 @@ int Ship::get_alignment_index() const {
     return alignment_index;
 }
 
-int Ship::get_width() const {
+unsigned int Ship::get_width() const {
     return cards.size();
 }
 
-int Ship::get_height() const {
+unsigned int Ship::get_height() const {
     return cards.empty() ? 0 : cards.at(0).size();
 }
 
