@@ -1,4 +1,3 @@
-// ReSharper disable once CppUnusedIncludeDirective
 #include "globals.h"
 
 const int card_width = 23;
