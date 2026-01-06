@@ -14,4 +14,4 @@ And to run it:
 
 <pre> ./Space_Duels </pre>
 
-- The current Space_Duels is made for Linux (Crostini), not Windows or Mac
+- The current Space_Duels executable is made for Linux (Crostini), not Windows or Mac
