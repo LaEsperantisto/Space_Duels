@@ -9,6 +9,7 @@ To re-compile this, here is my recommended command using the gcc compiler:
 
 <pre> g++ *.cpp -lncurses -o Space_Duels </pre>
 
+Note that you also need to download the appropriate ncurses library for your OS  
 And to run it:
 
 <pre> ./Space_Duels </pre>
