@@ -45,9 +45,11 @@ std::pair<Ship, Ship> align_ships(Ship ship1, Ship ship2) {
     while (align_1 != align_2) {
         if (align_1 > align_2) {
             ship2.add_column_front();
+            // ship2.update_data();
             align_2 = ship2.get_alignment_index();
         } else {
             ship1.add_column_front();
+            // ship1.update_data();
             align_1 = ship1.get_alignment_index();
         }
     }

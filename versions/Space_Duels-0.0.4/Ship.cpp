@@ -111,6 +111,7 @@ void Ship::add_column_back() {
         col.push_back(std::make_unique<Empty>());
 
     cards.push_back(std::move(col));
+    update_data();
 }
 
 void Ship::add_column_front() {
@@ -121,4 +122,5 @@ void Ship::add_column_front() {
         col.push_back(std::make_unique<Empty>());
 
     cards.insert(cards.begin(), std::move(col));
+    update_data();
 }
