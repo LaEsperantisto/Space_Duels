@@ -1,35 +1,31 @@
-// ReSharper disable All
 #include "Ship.h"
 
-#include <stdexcept>
 #include <memory>
 
-// Ship::Ship(CardVec2D &cards) : cards(std::move(cards)) {
-//     update_data();
-// }
+Ship::Ship(CardVec2D cards) : cards(std::move(cards)) {
+    update_data();
+}
 
 Ship::Ship() = default;
 
 
-/*
-Ship::Ship(CardInitList2D init) {
-    cards.reserve(init.size());
-
-    for (auto &column: init) {
-        std::vector<CardPtr> col;
-        col.reserve(column.size());
-
-        for (auto &card: column) {
-            // copy unique_ptr by cloning the raw pointer
-            col.push_back(std::move(card));
-        }
-
-        cards.push_back(std::move(col));
-    }
-
-    update_data();
-}
-*/
+// Ship::Ship(CardInitList2D &init) {
+//     cards.reserve(init.size());
+//
+//     for (auto &column: init) {
+//         std::vector<CardPtr> col;
+//         col.reserve(column.size());
+//
+//         for (auto &card: column) {
+//             // copy unique_ptr by cloning the raw pointer
+//             col.push_back(card);
+//         }
+//
+//         cards.push_back(std::move(col));
+//     }
+//
+//     update_data();
+// }
 
 
 const CardVec2D &Ship::get_cards() const {
@@ -98,11 +94,31 @@ void Ship::update_weight_count() {
     if (weight < 0) isLegal = false;
 }
 
-void Ship::set_cards(CardVec2D &new_cards) {
-    cards = std::move(new_cards);
-    update_data();
-}
+// void Ship::set_cards(CardVec2D &new_cards) {
+//     cards = std::move(new_cards);
+//     update_data();
+// }
 
 bool Ship::is_legal() const {
     return isLegal;
+}
+
+void Ship::add_column_back() {
+    std::vector<CardPtr> col;
+    col.reserve(get_height());
+
+    for (int i = 0; i < get_height(); ++i)
+        col.push_back(std::make_unique<Empty>());
+
+    cards.push_back(std::move(col));
+}
+
+void Ship::add_column_front() {
+    std::vector<CardPtr> col;
+    col.reserve(get_height());
+
+    for (int i = 0; i < get_height(); ++i)
+        col.push_back(std::make_unique<Empty>());
+
+    cards.insert(cards.begin(), std::move(col));
 }

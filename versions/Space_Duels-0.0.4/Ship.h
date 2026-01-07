@@ -5,7 +5,7 @@
 
 #include "Card.h"
 
-using CardPtr = std::unique_ptr<Card>;
+using CardPtr = std::shared_ptr<Card>;
 using CardVec2D = std::vector<std::vector<CardPtr> >;
 using CardInitList2D = std::initializer_list<std::initializer_list<CardPtr> >;
 
@@ -26,16 +26,27 @@ private:
     void update_weight_count();
 
 public:
-    // explicit Ship(CardVec2D &cards);
+    Ship(CardVec2D cards);
 
-    // Ship(CardInitList2D cards);
+    // Ship(CardInitList2D &cards);
+
     Ship();
 
     [[nodiscard]]
     const CardVec2D &get_cards() const;
 
 
-    void set_cards(CardVec2D &cards);
+    // void set_cards(CardVec2D &cards);
+
+    void add_column_front();
+    void add_column_back();
+    void remove_column_front();
+    void remove_column_back();
+
+    void add_row_top();
+    void add_row_bottom();
+    void remove_row_top();
+    void remove_row_bottom();
 
     [[nodiscard]]
     int get_alignment_index() const;

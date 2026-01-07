@@ -38,31 +38,16 @@ void print_ships(const Ship &ship1, const Ship &ship2) {
     }
 }
 
-std::vector<CardPtr> make_blank_column(const int height) {
-    std::vector<CardPtr> col;
-    col.reserve(height);
-
-    for (int i = 0; i < height; ++i)
-        col.push_back(std::make_unique<Empty>());
-
-    return col;
-}
-
 std::pair<Ship, Ship> align_ships(Ship ship1, Ship ship2) {
     int align_1 = ship1.get_alignment_index();
     int align_2 = ship2.get_alignment_index();
 
-    auto s1 = ship1.get_cards();
-    auto s2 = ship2.get_cards();
-
     while (align_1 != align_2) {
         if (align_1 > align_2) {
-            s2.insert(s2.begin(), make_blank_column(ship2.get_height()));
-            ship2.set_cards(s2);
+            ship2.add_column_front();
             align_2 = ship2.get_alignment_index();
         } else {
-            s1.insert(s1.begin(), make_blank_column(ship1.get_height()));
-            ship1.set_cards(s1);
+            ship1.add_column_front();
             align_1 = ship1.get_alignment_index();
         }
     }

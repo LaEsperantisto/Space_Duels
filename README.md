@@ -15,3 +15,10 @@ And to run it:
 <pre> ./Space_Duels </pre>
 
 - The current Space_Duels executable is made for Linux (Crostini), not Windows or Mac
+
+## Extra
+
+Starting from version 0.0.4 you can use cmake instead of the g++ command, and Space_Duels executable was abandoned
+and is no longer updated. The most recent compilation's .o files are in cmake-build-debug
+
+My CLion configurations for cmake are stored in the .idea folder

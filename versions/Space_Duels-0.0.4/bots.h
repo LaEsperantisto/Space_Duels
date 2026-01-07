@@ -2,9 +2,9 @@
 
 #include "Ship.h"
 
-extern Ship bot0;
-extern Ship bot1;
-extern Ship bot2;
-extern Ship bot3;
+extern const Ship bot0;
+extern const Ship bot1;
+extern const Ship bot2;
+extern const Ship bot3;
 
 void setup_bots();

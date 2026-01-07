@@ -1,0 +1,3 @@
+/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/main.dir
+/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/rebuild_cache.dir

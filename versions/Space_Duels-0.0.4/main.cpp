@@ -9,9 +9,9 @@
 
 // TODO:
 /*
-
-Make functions to initialize and resize bots (ships)
-
+ *
+ *
+ *
 */
 
 int main(const int argc, const char *argv[]) {
@@ -23,4 +23,5 @@ int main(const int argc, const char *argv[]) {
     refresh();
     getch();
     endwin();
+    return 0;
 }
