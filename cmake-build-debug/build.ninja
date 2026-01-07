@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: versions/Space_Duels-0.0.4/Space_Duels
+# Project: Space_Duels
 # Configurations: Debug
 # =============================================================================
 
@@ -41,80 +41,87 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/aster/dev/cpp/Space_Duels/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target main
+# Object build statements for EXECUTABLE target space_duels
 
 
 #############################################
-# Order-only phony target for main
+# Order-only phony target for space_duels
 
-build cmake_object_order_depends_target_main: phony || .
+build cmake_object_order_depends_target_space_duels: phony || .
 
-build CMakeFiles/main.dir/versions/Space_Duels-0.0.4/Card.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/aster/dev/cpp/Space_Duels/versions/Space_Duels-0.0.4/Card.cpp || cmake_object_order_depends_target_main
+build CMakeFiles/space_duels.dir/src/Card.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/src/Card.cpp || cmake_object_order_depends_target_space_duels
   CONFIG = Debug
-  DEP_FILE = CMakeFiles/main.dir/versions/Space_Duels-0.0.4/Card.cpp.o.d
+  DEP_FILE = CMakeFiles/space_duels.dir/src/Card.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/versions/Space_Duels-0.0.4
+  INCLUDES = -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/generated
+  OBJECT_DIR = CMakeFiles/space_duels.dir
+  OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
 
-build CMakeFiles/main.dir/versions/Space_Duels-0.0.4/Ship.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/aster/dev/cpp/Space_Duels/versions/Space_Duels-0.0.4/Ship.cpp || cmake_object_order_depends_target_main
+build CMakeFiles/space_duels.dir/src/Ship.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/src/Ship.cpp || cmake_object_order_depends_target_space_duels
   CONFIG = Debug
-  DEP_FILE = CMakeFiles/main.dir/versions/Space_Duels-0.0.4/Ship.cpp.o.d
+  DEP_FILE = CMakeFiles/space_duels.dir/src/Ship.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/versions/Space_Duels-0.0.4
+  INCLUDES = -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/generated
+  OBJECT_DIR = CMakeFiles/space_duels.dir
+  OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
 
-build CMakeFiles/main.dir/versions/Space_Duels-0.0.4/bots.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/aster/dev/cpp/Space_Duels/versions/Space_Duels-0.0.4/bots.cpp || cmake_object_order_depends_target_main
+build CMakeFiles/space_duels.dir/src/bots.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/src/bots.cpp || cmake_object_order_depends_target_space_duels
   CONFIG = Debug
-  DEP_FILE = CMakeFiles/main.dir/versions/Space_Duels-0.0.4/bots.cpp.o.d
+  DEP_FILE = CMakeFiles/space_duels.dir/src/bots.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/versions/Space_Duels-0.0.4
+  INCLUDES = -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/generated
+  OBJECT_DIR = CMakeFiles/space_duels.dir
+  OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
 
-build CMakeFiles/main.dir/versions/Space_Duels-0.0.4/globals.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/aster/dev/cpp/Space_Duels/versions/Space_Duels-0.0.4/globals.cpp || cmake_object_order_depends_target_main
+build CMakeFiles/space_duels.dir/src/globals.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/src/globals.cpp || cmake_object_order_depends_target_space_duels
   CONFIG = Debug
-  DEP_FILE = CMakeFiles/main.dir/versions/Space_Duels-0.0.4/globals.cpp.o.d
+  DEP_FILE = CMakeFiles/space_duels.dir/src/globals.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/versions/Space_Duels-0.0.4
+  INCLUDES = -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/generated
+  OBJECT_DIR = CMakeFiles/space_duels.dir
+  OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
 
-build CMakeFiles/main.dir/versions/Space_Duels-0.0.4/init_ncurses.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/aster/dev/cpp/Space_Duels/versions/Space_Duels-0.0.4/init_ncurses.cpp || cmake_object_order_depends_target_main
+build CMakeFiles/space_duels.dir/src/init_ncurses.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/src/init_ncurses.cpp || cmake_object_order_depends_target_space_duels
   CONFIG = Debug
-  DEP_FILE = CMakeFiles/main.dir/versions/Space_Duels-0.0.4/init_ncurses.cpp.o.d
+  DEP_FILE = CMakeFiles/space_duels.dir/src/init_ncurses.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/versions/Space_Duels-0.0.4
+  INCLUDES = -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/generated
+  OBJECT_DIR = CMakeFiles/space_duels.dir
+  OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
 
-build CMakeFiles/main.dir/versions/Space_Duels-0.0.4/main.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/aster/dev/cpp/Space_Duels/versions/Space_Duels-0.0.4/main.cpp || cmake_object_order_depends_target_main
+build CMakeFiles/space_duels.dir/src/main.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/src/main.cpp || cmake_object_order_depends_target_space_duels
   CONFIG = Debug
-  DEP_FILE = CMakeFiles/main.dir/versions/Space_Duels-0.0.4/main.cpp.o.d
+  DEP_FILE = CMakeFiles/space_duels.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/versions/Space_Duels-0.0.4
+  INCLUDES = -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/generated
+  OBJECT_DIR = CMakeFiles/space_duels.dir
+  OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
 
-build CMakeFiles/main.dir/versions/Space_Duels-0.0.4/utils.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/aster/dev/cpp/Space_Duels/versions/Space_Duels-0.0.4/utils.cpp || cmake_object_order_depends_target_main
+build CMakeFiles/space_duels.dir/src/utils.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/src/utils.cpp || cmake_object_order_depends_target_space_duels
   CONFIG = Debug
-  DEP_FILE = CMakeFiles/main.dir/versions/Space_Duels-0.0.4/utils.cpp.o.d
+  DEP_FILE = CMakeFiles/space_duels.dir/src/utils.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/versions/Space_Duels-0.0.4
+  INCLUDES = -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/generated
+  OBJECT_DIR = CMakeFiles/space_duels.dir
+  OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target main
+# Link build statements for EXECUTABLE target space_duels
 
 
 #############################################
-# Link the executable main
+# Link the executable space_duels
 
-build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/versions/Space_Duels-0.0.4/Card.cpp.o CMakeFiles/main.dir/versions/Space_Duels-0.0.4/Ship.cpp.o CMakeFiles/main.dir/versions/Space_Duels-0.0.4/bots.cpp.o CMakeFiles/main.dir/versions/Space_Duels-0.0.4/globals.cpp.o CMakeFiles/main.dir/versions/Space_Duels-0.0.4/init_ncurses.cpp.o CMakeFiles/main.dir/versions/Space_Duels-0.0.4/main.cpp.o CMakeFiles/main.dir/versions/Space_Duels-0.0.4/utils.cpp.o | /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so
+build space_duels: CXX_EXECUTABLE_LINKER__space_duels_Debug CMakeFiles/space_duels.dir/src/Card.cpp.o CMakeFiles/space_duels.dir/src/Ship.cpp.o CMakeFiles/space_duels.dir/src/bots.cpp.o CMakeFiles/space_duels.dir/src/globals.cpp.o CMakeFiles/space_duels.dir/src/init_ncurses.cpp.o CMakeFiles/space_duels.dir/src/main.cpp.o CMakeFiles/space_duels.dir/src/utils.cpp.o | /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = -lcurses  /usr/lib/x86_64-linux-gnu/libform.so
-  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_DIR = CMakeFiles/space_duels.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = main
-  TARGET_PDB = main.dbg
+  TARGET_FILE = space_duels
+  TARGET_PDB = space_duels.dbg
 
 
 #############################################
@@ -150,7 +157,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/aster/dev/cpp/Space_Duels/cmake-build-debug
 
-build all: phony main
+build all: phony space_duels
 
 # =============================================================================
 # Built-in targets
@@ -159,14 +166,14 @@ build all: phony main
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/aster/dev/cpp/Space_Duels/cmake-build-debug/cmake_install.cmake: RERUN_CMAKE | /home/aster/dev/cpp/Space_Duels/CMakeLists.txt /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU-C.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindCurses.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPkgConfig.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU-C.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU-C.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU-C.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-Initialize.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake
+build build.ninja /home/aster/dev/cpp/Space_Duels/cmake-build-debug/cmake_install.cmake: RERUN_CMAKE | /home/aster/dev/cpp/Space_Duels/CMakeLists.txt /home/aster/dev/cpp/Space_Duels/version.h.in /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindCurses.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPkgConfig.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-Initialize.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/aster/dev/cpp/Space_Duels/CMakeLists.txt /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU-C.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindCurses.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPkgConfig.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU-C.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU-C.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU-C.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-Initialize.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake: phony
+build /home/aster/dev/cpp/Space_Duels/CMakeLists.txt /home/aster/dev/cpp/Space_Duels/version.h.in /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindCurses.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPkgConfig.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Linker/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU-CXX.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-GNU.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux-Initialize.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linux.cmake /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -1,19 +1,33 @@
 cmake_minimum_required(VERSION 3.25)
-project(versions/Space_Duels-0.0.4/Space_Duels)
+
+project(Space_Duels
+        VERSION 0.0.5
+        LANGUAGES CXX
+)
 
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(version "0.0.4")
+# Generate version header
+configure_file(
+        ${CMAKE_SOURCE_DIR}/version.h.in
+        ${CMAKE_BINARY_DIR}/generated/version.h
+        @ONLY
+)
 
+# Source files
 file(GLOB all_cpp
-        "versions/Space_Duels-${version}/*.cpp"
+        "${CMAKE_SOURCE_DIR}/src/*.cpp"
 )
 
 find_package(Curses REQUIRED)
-include_directories(${CURSES_INCLUDE_DIR})
 
-add_executable(main
+add_executable(space_duels
         ${all_cpp}
 )
 
-target_link_libraries(main ${CURSES_LIBRARIES})
+target_link_libraries(space_duels PRIVATE ${CURSES_LIBRARIES})
+target_include_directories(space_duels PRIVATE
+        ${CURSES_INCLUDE_DIR}
+        ${CMAKE_BINARY_DIR}/generated
+)
