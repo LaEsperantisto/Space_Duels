@@ -30,3 +30,6 @@
 6	2006	1767812037498737042	CMakeFiles/space_duels.dir/versions/Space_Duels-0.0.5/utils.cpp.o	f03f09a2dd6e0dff
 4	1896	1767812037496737042	CMakeFiles/space_duels.dir/versions/Space_Duels-0.0.5/main.cpp.o	efe9de2a0ca608a7
 2	49	1767734855891611570	CMakeFiles/main.dir/versions/Space_Duels-0.0.3/init_ncurses.cpp.o	658302da1f7773f
+13	38	1768075210338518842	CMakeFiles/space_duels.dir/src/globals.cpp.o	5d10b3ad8a1f7d5b
+13	55	1768075210339518842	CMakeFiles/space_duels.dir/src/init_ncurses.cpp.o	c2bcfdbffd8dccc4
+55	165	1768075210380518842	space_duels	672737d9158f0022
