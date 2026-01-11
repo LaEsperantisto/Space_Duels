@@ -5,6 +5,8 @@
 #include <QApplication>
 #include <QGuiApplication>
 
+#include "globals.h"
+
 int main(int argc, char *argv[]) {
 	qputenv("QT_QPA_PLATFORM", "xcb");
 
@@ -14,6 +16,7 @@ int main(int argc, char *argv[]) {
 
 	ShipView view;
 	view.setWindowTitle(QString("Space Duels %1").arg(SPACE_DUELS_VERSION));
+
 	view.setShips(bot2,bot3);
 	view.showMaximized();
 

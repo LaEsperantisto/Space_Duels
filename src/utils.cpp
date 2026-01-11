@@ -2,20 +2,24 @@
 
 #include "Ship.h"
 #include "globals.h"
+#include "ShipView.h"
 
 #include <QPainter>
 #include <QString>
-#include "ShipView.h"
-#include "Ship.h"
 
 void draw_ships(QPainter& painter,
                 const Ship& ship1,
-                const Ship& ship2)
+                const Ship& ship2,
+                const int width,
+                const int height)
 {
     const auto [fst, snd] = align_ships(ship1, ship2);
 
     const auto& s1 = fst.get_cards();
     const auto& s2 = snd.get_cards();
+
+    x_offset = width / 2 - fst.get_width() * card_width / 2;
+    y_offset = height / 2 - (fst.get_height() + snd.get_height() + gap_between_ships) * card_height / 2;
 
     painter.setPen(Qt::white);
 
@@ -29,9 +33,10 @@ void draw_ships(QPainter& painter,
                     .arg(card->get_rank());
 
                 painter.drawText(
-                    x * card_width,
+                    x * card_width
+                        + x_offset,
                     y * card_height
-                    + y_offset,
+                        + y_offset,
                     text
                 );
             }
@@ -51,7 +56,7 @@ void draw_ships(QPainter& painter,
                     .arg(card->get_rank());
 
                 painter.drawText(
-                    x * card_width,
+                    x * card_width + x_offset,
                     (y + gap_between_ships) * card_height
                         + ship1.get_height() * card_height
                         + y_offset,
