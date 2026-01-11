@@ -1,24 +1,58 @@
-# Space_Duels
-A card game that I invented and that I am starting to convert into a video game
+# Space Duels
 
-## Note
-This is currently in progress, and is in ultra - pre - alpha
+**Space Duels** is a strategy card game I originally invented as a tabletop concept and am now actively converting
+into a video game using **C++ and Qt**.
 
-## Compiling
-To re-compile this, here is my recommended command using the gcc compiler:
+The game focuses on tactical ship layouts, card-based combat, and head-to-head duels between opposing spaceships.
 
-<pre> g++ *.cpp -lncurses -o Space_Duels </pre>
+---
 
-Note that you also need to download the appropriate ncurses library for your OS  
-And to run it:
+## Project Status
 
-<pre> ./Space_Duels </pre>
+**Ultra pre-alpha**
 
-- The current Space_Duels executable is made for Linux (Crostini), not Windows or Mac
+This project is very early in development.  
+Core mechanics, rendering, and architecture are still evolving, and breaking changes should be expected.
 
-## Extra
+At this stage:
+- Gameplay is incomplete
+- Assets are placeholder
+- APIs and file structure are not stable
 
-Starting from version 0.0.4 you can use cmake instead of the g++ command, and Space_Duels executable was abandoned
-and is no longer updated. The most recent compilation's .o files are in cmake-build-debug
+---
 
-My CLion configurations for cmake are stored in the .idea folder
+## Technologies
+
+- Language: C++
+- Framework: Qt 6 (Widgets)
+- Rendering: Custom Qt-based drawing
+- Original UI: ncurses (now being migrated to Qt)
+
+---
+
+## Dependencies
+
+- Qt 6  
+  Required modules:
+    - Qt6::Widgets
+    - Qt6::Gui
+    - Qt6::Core
+
+The project is intended to be cross-platform and should build on:
+- Linux
+- Windows
+- macOS
+
+(Tested primarily on Linux at the moment.)
+
+---
+
+## Building (early outline)
+
+Build instructions may change frequently, but a typical CMake-based setup may look like this:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
