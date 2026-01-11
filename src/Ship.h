@@ -15,7 +15,7 @@ private:
     CardVec2D cards;
     int num_hubs = 0;
     bool isLegal = true;
-    int alignment_index = -1;
+    unsigned int alignment_index = -1;
     int weight = 0;
 
     [[nodiscard]]

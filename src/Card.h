@@ -1,8 +1,9 @@
 #pragma once
 
 #include <string>
-// #include <unordered_map>
 #include <array>
+
+#include <qpixmap.h>
 
 class Card {
 protected:
@@ -20,6 +21,8 @@ public:
 
     [[nodiscard]] virtual bool isEmpty() const { return false; }
     [[nodiscard]] virtual int get_weight() const { return 0; }
+
+    [[nodiscard]] virtual QPixmap get_texture() const;
 };
 
 

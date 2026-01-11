@@ -2,6 +2,13 @@
 
 #include <iostream>
 
+QPixmap Card::get_texture() const {
+    if (QPixmap pixmap(QString("gfx/%1.png").arg(this->get_name().data())); !pixmap.isNull()) {
+        return pixmap;
+    }
+    return {"gfx/texture_error.png"};
+}
+
 // Hub ------------------------------------------------------------------------
 
 Hub::Hub(const int rank) {
@@ -59,10 +66,9 @@ Turret::Turret(const int rank, const int level) {
 int Turret::get_power() const {
     if (this->rank > 0 && this->rank <= rank_to_power.size() - 1) {
         return rank_to_power.at(rank - 1) + this->level;
-    } else {
-        std::cerr << "Rank should only be 1 - 3";
-        return 0;
     }
+    std::cerr << "Rank should only be 1 - 3";
+    return 0;
 }
 
 int Turret::get_weight() const {

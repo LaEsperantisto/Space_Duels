@@ -15,11 +15,10 @@ void ShipView::setShips(const Ship& a, const Ship& b) {
 }
 
 void ShipView::paintEvent(QPaintEvent*) {
-	const QSize size = this->size();
 	// qDebug() << "paintEvent called";
 
 	QPainter painter(this);
 	painter.fillRect(rect(), Qt::black);
 
-	draw_ships(painter, ship1, ship2, size.width(), size.height());
+	draw_ships(painter, ship1, ship2, this);
 }

@@ -8,26 +8,6 @@ Ship::Ship(CardVec2D cards) : cards(std::move(cards)) {
 
 Ship::Ship() = default;
 
-
-// Ship::Ship(CardInitList2D &init) {
-//     cards.reserve(init.size());
-//
-//     for (auto &column: init) {
-//         std::vector<CardPtr> col;
-//         col.reserve(column.size());
-//
-//         for (auto &card: column) {
-//             // copy unique_ptr by cloning the raw pointer
-//             col.push_back(card);
-//         }
-//
-//         cards.push_back(std::move(col));
-//     }
-//
-//     update_data();
-// }
-
-
 const CardVec2D &Ship::get_cards() const {
     return cards;
 }
@@ -41,8 +21,8 @@ void Ship::check_cards() {
     alignment_index = -1;
     isLegal = true;
 
-    for (int x = 0; x < get_width(); ++x) {
-        for (int y = 0; y < get_height(); ++y) {
+    for (unsigned int x = 0; x < get_width(); ++x) {
+        for (unsigned int y = 0; y < get_height(); ++y) {
             if (!isHub(*cards[x][y])) continue;
 
             num_hubs++;
@@ -91,7 +71,7 @@ void Ship::update_weight_count() {
             weight += card->get_weight();
         }
     }
-    if (weight < 0) isLegal = false;
+    if (weight > 0) isLegal = false;
 }
 
 // void Ship::set_cards(CardVec2D &new_cards) {
@@ -107,7 +87,7 @@ void Ship::add_column_back() {
     std::vector<CardPtr> col;
     col.reserve(get_height());
 
-    for (int i = 0; i < get_height(); ++i)
+    for (unsigned int i = 0; i < get_height(); ++i)
         col.push_back(std::make_unique<Empty>());
 
     cards.push_back(std::move(col));
@@ -118,7 +98,7 @@ void Ship::add_column_front() {
     std::vector<CardPtr> col;
     col.reserve(get_height());
 
-    for (int i = 0; i < get_height(); ++i)
+    for (unsigned int i = 0; i < get_height(); ++i)
         col.push_back(std::make_unique<Empty>());
 
     cards.insert(cards.begin(), std::move(col));
