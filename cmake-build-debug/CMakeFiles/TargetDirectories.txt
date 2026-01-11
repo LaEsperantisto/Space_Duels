@@ -1,3 +1,5 @@
 /home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/space_duels.dir
 /home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/space_duels_autogen_timestamp_deps.dir
+/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/space_duels_autogen.dir

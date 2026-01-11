@@ -10,17 +10,16 @@ const Ship bot0 =
         { std::make_shared<Hub>(1) }
     };
 
-const Ship bot1(
+const Ship bot1 =
     CardVec2D{
         {
             std::make_shared<Thruster>(1),
             std::make_shared<Hub>(1),
             std::make_shared<Turret>(1, 1)
         }
-    }
-);
+    };
 
-const Ship bot2(
+const Ship bot2 =
     CardVec2D{
         {
             std::make_shared<Thruster>(1),
@@ -37,10 +36,9 @@ const Ship bot2(
             std::make_shared<Empty>(),
             std::make_shared<Empty>()
         }
-    }
-);
+    };
 
-const Ship bot3(
+const Ship bot3 =
     CardVec2D{
         {
             std::make_shared<Thruster>(2),
@@ -57,5 +55,4 @@ const Ship bot3(
             std::make_shared<Empty>(),
             std::make_shared<Empty>()
         }
-    }
-);
+    };

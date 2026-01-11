@@ -1,27 +1,21 @@
-#include <ncurses.h>
-
-// #include <string>
-// #include <iostream>
-
-#include "utils.h"
 #include "bots.h"
-#include "init_ncurses.h"
+#include "ShipView.h"
+#include "../generated/version.h"
 
-// TODO:
-/*
- *
- *
- *
-*/
+#include <QApplication>
+#include <QGuiApplication>
 
-int main(const int argc, const char *argv[]) {
-    init_ncurses();
+int main(int argc, char *argv[]) {
+	qputenv("QT_QPA_PLATFORM", "xcb");
 
-    print_ships(bot3, bot1);
-    // print_ships(bot2, bot3);
+	[[maybe_unused]]
+	QApplication app(argc, argv);
+	QCoreApplication::setApplicationName("Space Duels");
 
-    refresh();
-    getch();
-    endwin();
-    return 0;
+	ShipView view;
+	view.setWindowTitle(QString("Space Duels %1").arg(SPACE_DUELS_VERSION));
+	view.setShips(bot2,bot3);
+	view.showMaximized();
+
+	return QApplication::exec();
 }
