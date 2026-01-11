@@ -1,0 +1,4 @@
+/home/aster/dev/cpp/Space_Duels/build/CMakeFiles/space_duels.dir
+/home/aster/dev/cpp/Space_Duels/build/CMakeFiles/edit_cache.dir
+/home/aster/dev/cpp/Space_Duels/build/CMakeFiles/rebuild_cache.dir
+/home/aster/dev/cpp/Space_Duels/build/CMakeFiles/space_duels_autogen.dir
