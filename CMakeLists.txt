@@ -45,6 +45,7 @@ add_executable(space_duels
         src/Ship.cpp
         src/utils.cpp
         src/ShipView.cpp
+        resources.qrc
 )
 
 set_target_properties(space_duels PROPERTIES

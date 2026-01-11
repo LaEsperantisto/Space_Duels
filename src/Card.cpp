@@ -2,11 +2,22 @@
 
 #include <iostream>
 
+// Card ------------------------------------------------------------------------
+
 QPixmap Card::get_texture() const {
-    if (QPixmap pixmap(QString("gfx/%1.png").arg(this->get_name().data())); !pixmap.isNull()) {
+    if (QPixmap pixmap(QString(":/gfx/%1.png")
+            .arg(QString::fromStdString(get_name())));
+        !pixmap.isNull()) {
         return pixmap;
     }
-    return {"gfx/texture_error.png"};
+    return {":gfx/texture_error.png"};
+}
+
+QString Card::get_details() const {
+    return QString("Card: %1 power: %2 rank: %3")
+            .arg(QString::fromStdString(get_name()))
+            .arg(get_power())
+            .arg(get_rank());
 }
 
 // Hub ------------------------------------------------------------------------
@@ -16,12 +27,11 @@ Hub::Hub(const int rank) {
 }
 
 int Hub::get_power() const {
-    if (this->rank > 0 && this->rank <= rank_to_power.size() - 1) {
+    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
         return rank_to_power.at(rank - 1);
-    } else {
-        std::cerr << "Rank should only be 1 - 3";
-        return 0;
     }
+    std::cerr << "Rank should only be 1 - 3";
+    return 0;
 }
 
 int Hub::get_weight() const {
@@ -64,7 +74,7 @@ Turret::Turret(const int rank, const int level) {
 }
 
 int Turret::get_power() const {
-    if (this->rank > 0 && this->rank <= rank_to_power.size() - 1) {
+    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
         return rank_to_power.at(rank - 1) + this->level;
     }
     std::cerr << "Rank should only be 1 - 3";
@@ -83,6 +93,24 @@ std::string Turret::get_short_name() const {
     return "Tur";
 }
 
+QString Turret::get_details() const {
+    return QString("Card: Turret power: %1 rank: %2 level: %3")
+            .arg(get_power())
+            .arg(get_rank())
+            .arg(get_level());
+}
+
+QString Turret::get_description() const {
+    return {
+        "The turret is the most basic weapon, capable of firing only ballistic rounds."
+        "The turret is also the first unlockable weapon, asside from the Hub."
+    };
+}
+
+int Turret::get_level() const {
+    return level;
+}
+
 // Thruster -----------------------------------------------------------------------
 
 Thruster::Thruster(const int rank) {
@@ -90,12 +118,11 @@ Thruster::Thruster(const int rank) {
 }
 
 int Thruster::get_power() const {
-    if (this->rank > 0 && this->rank <= rank_to_power.size() - 1) {
+    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
         return rank_to_power.at(rank - 1);
-    } else {
-        std::cerr << "Rank should only be 1 - 3";
-        return 0;
     }
+    std::cerr << "Rank should only be 1 - 3";
+    return 0;
 }
 
 int Thruster::get_weight() const {

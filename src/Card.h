@@ -23,6 +23,10 @@ public:
     [[nodiscard]] virtual int get_weight() const { return 0; }
 
     [[nodiscard]] virtual QPixmap get_texture() const;
+
+    [[nodiscard]] virtual QString get_details() const;
+
+    [[nodiscard]] virtual QString get_description() const { return {""}; }
 };
 
 
@@ -60,7 +64,7 @@ public:
 
 class Turret : public Card {
 private:
-    int level;
+    int level = -1;
     static constexpr std::array<int, 3> rank_to_power = {
         2,
         4,
@@ -77,6 +81,12 @@ public:
     [[nodiscard]] std::string get_short_name() const override;
 
     [[nodiscard]] std::string get_name() const override;
+
+    [[nodiscard]] QString get_details() const override;
+
+    [[nodiscard]] QString get_description() const override;
+
+    [[nodiscard]] int get_level() const;
 };
 
 class Thruster : public Card {

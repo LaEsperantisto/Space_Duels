@@ -7,82 +7,133 @@
 #include <QPainter>
 #include <QString>
 
-void draw_ships(QPainter& painter,
-                const Ship& ship1,
-                const Ship& ship2,
-                const QWidget* const widget)
-{
+void draw_ships(QPainter &painter,
+                const Ship &ship1,
+                const Ship &ship2,
+                const QWidget *widget,
+                const std::pair<int, int> &mouse_pos) {
     const auto [fst, snd] = align_ships(ship1, ship2);
 
-    const auto& s1 = fst.get_cards();
-    const auto& s2 = snd.get_cards();
+    const auto &s1 = fst.get_cards();
+    const auto &s2 = snd.get_cards();
 
     const auto width = widget->width();
     const auto height = widget->height();
 
     x_offset = width / 2 - fst.get_width() * card_width / 2;
-    y_offset = height / 2 - (fst.get_height() + snd.get_height() + gap_between_ships) * card_height / 2;
+    y_offset = height / 2 -
+               (fst.get_height() + snd.get_height() + gap_between_ships) * card_height / 2;
 
-    painter.setPen(Qt::white);
-    const QFont font("Consolas", 10);
-    painter.setFont(font);
+    QString card_details;
+    QString card_description;
 
-    // First ship
+    // ---------- First ship ----------
     for (size_t x = 0; x < s1.size(); ++x) {
         for (size_t y = 0; y < s1.at(x).size(); ++y) {
-            if (const auto& card = s1.at(x).at(y); !card->isEmpty()) {
-                painter.drawPixmap(
-                        x * card_width
-                            + x_offset,
-                        y * card_height
-                            + y_offset,
-                        card->get_texture());
+            if (const auto &card = s1.at(x).at(y); !card->isEmpty()) {
+                const int drawX = x * card_width + x_offset;
+                const int drawY = y * card_height + y_offset;
 
-                const QString text = QString("%1 power: %2 rank: %3")
-                    .arg(QString::fromStdString(card->get_short_name()))
-                    .arg(card->get_power())
-                    .arg(card->get_rank());
+                painter.save();
+                painter.translate(drawX, drawY + card_height);
+                painter.scale(1, -1);
+                painter.drawPixmap(0, 0, card->get_texture());
+                painter.restore();
 
-                painter.drawText(
-                    x * card_width
-                        + x_offset,
-                    y * card_height
-                        + y_offset,
-                    text
-                );
+                QRect cardRect(drawX, drawY, card_width, card_height);
+                if (cardRect.contains(mouse_pos.first, mouse_pos.second)) {
+                    card_details = card->get_details();
+                    card_description = card->get_description();
+                }
             }
         }
     }
 
-    // Second ship (mirrored vertically)
+    // ---------- Second ship ----------
     for (size_t x = 0; x < s2.size(); ++x) {
         for (size_t y = 0; y < s2.at(x).size(); ++y) {
-            const auto& card =
-                s2.at(x).at(ship2.get_height() - 1 - y);
-
+            const auto &card = s2.at(x).at(snd.get_height() - 1 - y);
             if (!card->isEmpty()) {
-                painter.drawPixmap(
-                            x * card_width + x_offset,
-                        (y + gap_between_ships) * card_height
-                            + ship1.get_height() * card_height
-                            + y_offset,
-                        card->get_texture());
+                const int drawX = x * card_width + x_offset;
+                const int drawY =
+                        (y + gap_between_ships) * card_height +
+                        fst.get_height() * card_height +
+                        y_offset;
 
-                const QString text = QString("%1 power: %2 rank: %3")
-                    .arg(QString::fromStdString(card->get_short_name()))
-                    .arg(card->get_power())
-                    .arg(card->get_rank());
+                painter.drawPixmap(drawX, drawY, card->get_texture());
 
-                painter.drawText(
-                    x * card_width + x_offset,
-                    (y + gap_between_ships) * card_height
-                        + ship1.get_height() * card_height
-                        + y_offset,
-                    text
-                );
+                QRect cardRect(drawX, drawY, card_width, card_height);
+                if (cardRect.contains(mouse_pos.first, mouse_pos.second)) {
+                    card_details = card->get_details();
+                    card_description = card->get_description();
+                }
             }
         }
     }
+
+    if (card_details.isEmpty())
+        return;
+
+    if (card_description.isEmpty())
+        card_description = "No description available";
+
+    painter.save();
+
+    constexpr int padding = 6;
+    constexpr int x_mouse_offset = 12;
+    constexpr int y_mouse_offset = 12;
+    constexpr int max_description_width = 350; // <<< wrap width
+
+    const int x = mouse_pos.first + x_mouse_offset;
+    const int y = mouse_pos.second + y_mouse_offset;
+
+    QFont font("Consolas", 10);
+    painter.setFont(font);
+    QFontMetrics fm(font);
+
+    // ---------- Details box ----------
+    QRect detailsTextRect = fm.boundingRect(card_details);
+    QRect detailsBox(
+        x,
+        y,
+        detailsTextRect.width() + padding * 2,
+        detailsTextRect.height() + padding * 2
+    );
+
+    painter.setBrush(QColor(50, 50, 50, 220));
+    painter.setPen(Qt::blue);
+    painter.drawRect(detailsBox);
+
+    painter.drawText(
+        detailsBox.adjusted(padding, padding, -padding, -padding),
+        card_details
+    );
+
+    // ---------- Description box (wrapped) ----------
+    QRect descriptionTextRect = fm.boundingRect(
+        QRect(0, 0, max_description_width, 1000),
+        Qt::TextWordWrap,
+        card_description
+    );
+
+    const QRect descriptionBox(
+        x,
+        y + detailsBox.height(),
+        descriptionTextRect.width() + padding * 2,
+        descriptionTextRect.height() + padding * 2
+    );
+
+    painter.setBrush(QColor(50, 50, 50, 220));
+    painter.setPen(Qt::blue);
+    painter.drawRect(descriptionBox);
+
+    painter.drawText(
+        descriptionBox.adjusted(padding, padding, -padding, -padding),
+        Qt::TextWordWrap,
+        card_description
+    );
+
+    painter.restore();
 }
 
 std::pair<Ship, Ship> align_ships(Ship ship1, Ship ship2) {
@@ -92,11 +143,9 @@ std::pair<Ship, Ship> align_ships(Ship ship1, Ship ship2) {
     while (align_1 != align_2) {
         if (align_1 > align_2) {
             ship2.add_column_front();
-            // ship2.update_data();
             align_2 = ship2.get_alignment_index();
         } else {
             ship1.add_column_front();
-            // ship1.update_data();
             align_1 = ship1.get_alignment_index();
         }
     }

@@ -189,7 +189,8 @@
 		"/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake",
 		"/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake",
 		"/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake",
-		"/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake"
+		"/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake",
+		"/home/aster/dev/cpp/Space_Duels/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/aster/dev/cpp/Space_Duels",
 	"CROSS_CONFIG" : false,

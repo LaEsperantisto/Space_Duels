@@ -10,6 +10,8 @@
 int main(int argc, char *argv[]) {
 	qputenv("QT_QPA_PLATFORM", "xcb");
 
+	qDebug() << "Program started";
+
 	QApplication app(argc, argv);
 	QCoreApplication::setApplicationName("Space Duels");
 
@@ -21,9 +23,10 @@ int main(int argc, char *argv[]) {
 	qDebug() << bot2.is_legal();
 	qDebug() << bot3.is_legal();
 
-	view.setShips(bot2,bot3);
+	view.setShips(bot2, bot3);
 
-	view.showMaximized();
+	view.setWindowState(Qt::WindowMaximized);
+	view.show();
 
 	return QApplication::exec();
 }

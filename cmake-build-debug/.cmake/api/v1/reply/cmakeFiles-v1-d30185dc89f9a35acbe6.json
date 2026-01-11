@@ -808,6 +808,9 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "resources.qrc"
 		}
 	],
 	"kind" : "cmakeFiles",

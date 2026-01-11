@@ -2,23 +2,29 @@
 
 #include "utils.h"
 
-ShipView::ShipView(QWidget* parent)
-	: QWidget(parent)
-{
+ShipView::ShipView(QWidget *parent)
+	: QWidget(parent) {
 	setMinimumSize(800, 600);
+	setMouseTracking(true);
 }
 
-void ShipView::setShips(const Ship& a, const Ship& b) {
+void ShipView::setShips(const Ship &a, const Ship &b) {
 	ship1 = a;
 	ship2 = b;
-	update();  // schedule repaint
+	update(); // schedule repaint
 }
 
-void ShipView::paintEvent(QPaintEvent*) {
+void ShipView::paintEvent(QPaintEvent *) {
 	// qDebug() << "paintEvent called";
 
 	QPainter painter(this);
 	painter.fillRect(rect(), Qt::black);
 
-	draw_ships(painter, ship1, ship2, this);
+	draw_ships(painter, ship1, ship2, this, mouse_pos);
+}
+
+void ShipView::mouseMoveEvent(QMouseEvent *event) {
+	mouse_pos = {event->pos().x(), event->pos().y()};
+
+	update();
 }

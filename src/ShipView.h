@@ -1,6 +1,8 @@
 #pragma once
 
 #include <QWidget>
+#include <QMouseEvent>
+
 #include "Ship.h"
 
 class ShipView : public QWidget {
@@ -13,7 +15,11 @@ public:
 protected:
 	void paintEvent(QPaintEvent*) override;
 
+	void mouseMoveEvent(QMouseEvent* event) override;
+
 private:
 	Ship ship1;
 	Ship ship2;
+
+	std::pair<int,int> mouse_pos;
 };

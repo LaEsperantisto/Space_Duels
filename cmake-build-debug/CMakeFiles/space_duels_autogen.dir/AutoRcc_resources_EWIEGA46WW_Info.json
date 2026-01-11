@@ -1,0 +1,27 @@
+{
+	"BUILD_DIR" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug/space_duels_autogen",
+	"CMAKE_BINARY_DIR" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/aster/dev/cpp/Space_Duels",
+	"CMAKE_SOURCE_DIR" : "/home/aster/dev/cpp/Space_Duels",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug/space_duels_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/aster/dev/cpp/Space_Duels/gfx/Turret.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Hub.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/texture_error.png"
+	],
+	"LOCK_FILE" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/aster/dev/cpp/Space_Duels/resources.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}
