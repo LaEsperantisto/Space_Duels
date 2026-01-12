@@ -15,6 +15,7 @@ This project is very early in development.
 Core mechanics, rendering, and architecture are still evolving, and breaking changes should be expected.
 
 At this stage:
+
 - Gameplay is incomplete
 - Assets are placeholder
 - APIs and file structure are not stable
@@ -39,6 +40,7 @@ At this stage:
     - Qt6::Core
 
 The project is intended to be cross-platform and should build on:
+
 - Linux
 - Windows
 - macOS
@@ -57,3 +59,7 @@ cd build
 cmake ..
 make
 ```
+
+## Complete Guide
+
+Go to https://space-duels.fandom.com/wiki/Space_Duels_Wiki for the complete guide.
