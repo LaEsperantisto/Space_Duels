@@ -48,6 +48,8 @@ public:
     [[nodiscard]] std::string get_short_name() const override;
 
     [[nodiscard]] std::string get_name() const override;
+
+    [[nodiscard]] QString get_description() const override;
 };
 
 class Empty final : public Card {
@@ -107,4 +109,6 @@ public:
     [[nodiscard]] std::string get_short_name() const override;
 
     [[nodiscard]] std::string get_name() const override;
+
+    [[nodiscard]] QString get_description() const override;
 };

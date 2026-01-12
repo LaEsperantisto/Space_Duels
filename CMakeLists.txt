@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(Space_Duels
-        VERSION 0.0.6
+        VERSION 0.1.0
         LANGUAGES CXX
 )
 
@@ -76,4 +76,4 @@ target_link_libraries(space_duels
 
 if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(space_duels PRIVATE -Wall -Wextra -Wpedantic)
-endif()
+endif ()

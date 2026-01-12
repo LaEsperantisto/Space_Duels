@@ -18,12 +18,12 @@ int main(int argc, char *argv[]) {
 	ShipView view;
 	view.setWindowTitle(QString("Space Duels %1").arg(SPACE_DUELS_VERSION));
 
-	qDebug() << bot0.is_legal();
-	qDebug() << bot1.is_legal();
-	qDebug() << bot2.is_legal();
-	qDebug() << bot3.is_legal();
+	// qDebug() << bot0.is_legal();
+	// qDebug() << bot1.is_legal();
+	// qDebug() << bot2.is_legal();
+	// qDebug() << bot3.is_legal();
 
-	view.setShips(bot2, bot3);
+	view.setShips(bot1, bot3);
 
 	view.setWindowState(Qt::WindowMaximized);
 	view.show();

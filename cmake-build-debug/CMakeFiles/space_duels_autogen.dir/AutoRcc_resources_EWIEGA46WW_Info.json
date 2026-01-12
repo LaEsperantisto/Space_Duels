@@ -11,6 +11,7 @@
 	[
 		"/home/aster/dev/cpp/Space_Duels/gfx/Turret.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/Hub.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Thruster.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/texture_error.png"
 	],
 	"LOCK_FILE" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",

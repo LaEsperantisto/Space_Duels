@@ -46,6 +46,14 @@ std::string Hub::get_short_name() const {
     return "Hub";
 }
 
+QString Hub::get_description() const {
+    return {
+        "The Hub is your life. Lose your Hub, lose the game. A Rank 1 Hub is destroyed by any round,"
+        "a Rank 2 Hub is resistant, and a Rank 3 Hub is super resistant. Note: having a Debris of Hub"
+        "still counts as a Hub."
+    };
+}
+
 
 // Empty ------------------------------------------------------------------------
 
@@ -103,7 +111,7 @@ QString Turret::get_details() const {
 QString Turret::get_description() const {
     return {
         "The turret is the most basic weapon, capable of firing only ballistic rounds."
-        "The turret is also the first unlockable weapon, asside from the Hub."
+        "The turret is also the first unlockable weapon, aside from the Hub."
     };
 }
 
@@ -135,4 +143,11 @@ std::string Thruster::get_name() const {
 
 std::string Thruster::get_short_name() const {
     return "Thr";
+}
+
+QString Thruster::get_description() const {
+    return {
+        "Thrusters are very important. If you don't have enough thrusters, you can't shoot your opponent."
+        "A Rank 1 Thruster supports 3 other cards."
+    };
 }

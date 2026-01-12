@@ -2,6 +2,7 @@
     <qresource prefix="/">
         <file>gfx/Hub.png</file>
         <file>gfx/Turret.png</file>
+        <file>gfx/Thruster.png</file>
         <file>gfx/texture_error.png</file>
     </qresource>
 </RCC>
