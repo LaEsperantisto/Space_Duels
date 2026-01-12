@@ -36,12 +36,13 @@ void draw_ships(QPainter &painter,
 
                 painter.save();
                 painter.translate(drawX, drawY + card_height);
-                painter.scale(1, -1);
+                const auto scale = get_card_scale(card_png_width, card_png_height, card_width, card_height);
+                painter.scale(scale.first, -scale.second);
                 painter.drawPixmap(0, 0, card->get_texture());
                 painter.restore();
 
-                QRect cardRect(drawX, drawY, card_width, card_height);
-                if (cardRect.contains(mouse_pos.first, mouse_pos.second)) {
+                if (QRect cardRect(drawX, drawY, card_width, card_height); cardRect.contains(
+                    mouse_pos.first, mouse_pos.second)) {
                     card_details = card->get_details();
                     card_description = card->get_description();
                 }
@@ -60,10 +61,14 @@ void draw_ships(QPainter &painter,
                         fst.get_height() * card_height +
                         y_offset;
 
+                painter.save();
+                const auto scale = get_card_scale(card_png_width, card_png_height, card_width, card_height);
+                painter.scale(scale.first, scale.second);
                 painter.drawPixmap(drawX, drawY, card->get_texture());
+                painter.restore();
 
-                QRect cardRect(drawX, drawY, card_width, card_height);
-                if (cardRect.contains(mouse_pos.first, mouse_pos.second)) {
+                if (QRect cardRect(drawX, drawY, card_width, card_height); cardRect.contains(
+                    mouse_pos.first, mouse_pos.second)) {
                     card_details = card->get_details();
                     card_description = card->get_description();
                 }
@@ -96,8 +101,8 @@ void draw_ships(QPainter &painter,
     QRect detailsBox(
         x,
         y,
-        detailsTextRect.width() + padding * 2,
-        detailsTextRect.height() + padding * 2
+        detailsTextRect.width() + padding * 2 + 5,
+        detailsTextRect.height() + padding * 2 + 5
     );
 
     painter.setBrush(QColor(50, 50, 50, 220));
@@ -151,4 +156,12 @@ std::pair<Ship, Ship> align_ships(Ship ship1, Ship ship2) {
     }
 
     return {ship1, ship2};
+}
+
+std::pair<int, int> get_card_scale(const int png_width, const int png_height, const int wanted_width,
+                                   const int wanted_height) {
+    return {
+        wanted_width / png_width,
+        wanted_height / png_height
+    };
 }

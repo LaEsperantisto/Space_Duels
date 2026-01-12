@@ -11,3 +11,5 @@ void draw_ships(QPainter &painter,
                 const std::pair<int, int> &mouse_pos);
 
 std::pair<Ship, Ship> align_ships(Ship ship1, Ship ship2);
+
+std::pair<int, int> get_card_scale(int png_width, int png_height, int wanted_width, int wanted_height);

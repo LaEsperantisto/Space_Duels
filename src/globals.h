@@ -5,3 +5,5 @@ extern int y_offset;
 extern const int card_width;
 extern const int card_height;
 extern const int gap_between_ships;
+extern const int card_png_width;
+extern const int card_png_height;
