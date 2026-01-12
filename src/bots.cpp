@@ -2,7 +2,7 @@
 #include <memory>
 #include <vector>
 
-const std::array<Ship, 5> bots = {
+const std::array<Ship, 6> bots = {
     Ship{
         // bot 0
         CardVec2D{
@@ -81,6 +81,32 @@ const std::array<Ship, 5> bots = {
                 std::make_shared<Thruster>(2),
                 std::make_shared<Turret>(1, 5),
                 std::make_shared<Empty>(),
+                std::make_shared<Empty>(),
+            }
+        }
+    },
+    Ship{
+        // bot 5
+        CardVec2D{
+            {
+                std::make_shared<Thruster>(2),
+                std::make_shared<Turret>(2, 5),
+                std::make_shared<Turret>(1, 3),
+                std::make_shared<Wall>(1),
+                std::make_shared<Empty>(),
+            },
+            {
+                std::make_shared<Thruster>(3),
+                std::make_shared<Hub>(2),
+                std::make_shared<Relay>(1),
+                std::make_shared<Turret>(3, 5),
+                std::make_shared<Round_swallower>(1),
+            },
+            {
+                std::make_shared<Thruster>(2),
+                std::make_shared<Turret>(2, 5),
+                std::make_shared<Turret>(1, 3),
+                std::make_shared<Wall>(1),
                 std::make_shared<Empty>(),
             }
         }

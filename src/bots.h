@@ -2,4 +2,4 @@
 
 #include "Ship.h"
 
-extern const std::array<Ship, 5> bots;
+extern const std::array<Ship, 6> bots;

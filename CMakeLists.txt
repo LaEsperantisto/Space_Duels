@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(Space_Duels
-        VERSION 0.1.0
+        VERSION 0.1.1
         LANGUAGES CXX
 )
 

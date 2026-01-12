@@ -404,6 +404,4 @@ CMakeFiles/space_duels.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QGuiApplication \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
  /home/aster/dev/cpp/Space_Duels/src/globals.h

@@ -9,9 +9,15 @@
 	"INCLUDE_DIR" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug/space_duels_autogen/include",
 	"INPUTS" : 
 	[
+		"/home/aster/dev/cpp/Space_Duels/gfx/Hub_2.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Round_swallower_1.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/Turret_1.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/Wall_1.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Turret_2.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/Thruster_1.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Turret_3.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Relay_1.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Thruster_3.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/Thruster_2.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/Hub_1.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/battle_bg.png",

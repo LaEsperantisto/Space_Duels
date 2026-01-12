@@ -140,3 +140,42 @@ public:
 
     [[nodiscard]] QString get_description() const override;
 };
+
+class Relay : public Card {
+private:
+    static constexpr std::array<int, 3> rank_to_power = {
+        0,
+        0,
+        2,
+    };
+
+public:
+    explicit Relay(int rank);
+
+    [[nodiscard]] int get_power() const override;
+
+    [[nodiscard]] int get_weight() const override;
+
+    [[nodiscard]] std::string get_short_name() const override;
+
+    [[nodiscard]] std::string get_name() const override;
+
+    [[nodiscard]] QString get_description() const override;
+};
+
+class Round_swallower : public Card {
+private:
+
+public:
+    explicit Round_swallower(int rank);
+
+    [[nodiscard]] int get_power() const override;
+
+    [[nodiscard]] int get_weight() const override;
+
+    [[nodiscard]] std::string get_short_name() const override;
+
+    [[nodiscard]] std::string get_name() const override;
+
+    [[nodiscard]] QString get_description() const override;
+};

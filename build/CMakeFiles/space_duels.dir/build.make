@@ -71,8 +71,15 @@ include CMakeFiles/space_duels.dir/flags.make
 
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/resources.qrc
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Hub_2.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Round_swallower_1.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Turret_1.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Wall_1.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Turret_2.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Thruster_1.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Turret_3.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Relay_1.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Thruster_3.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Thruster_2.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Hub_1.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/battle_bg.png
