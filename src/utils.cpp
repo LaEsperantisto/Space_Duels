@@ -14,6 +14,9 @@ void draw_ships(QPainter &painter,
                 const std::pair<int, int> &mouse_pos) {
     const auto [fst, snd] = align_ships(ship1, ship2);
 
+    if (fst.get_width() == 0 || snd.get_width() == 0)
+        return;
+
     const auto &s1 = fst.get_cards();
     const auto &s2 = snd.get_cards();
 
@@ -23,6 +26,7 @@ void draw_ships(QPainter &painter,
     x_offset = width / 2 - fst.get_width() * card_width / 2;
     y_offset = height / 2 -
                (fst.get_height() + snd.get_height() + gap_between_ships) * card_height / 2;
+
 
     QString card_details;
     QString card_description;

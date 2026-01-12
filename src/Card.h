@@ -118,3 +118,25 @@ public:
 
     [[nodiscard]] QString get_description() const override;
 };
+
+class Wall : public Card {
+private:
+    static constexpr std::array<int, 3> rank_to_power = {
+        0,
+        0,
+        1,
+    };
+
+public:
+    explicit Wall(int rank);
+
+    [[nodiscard]] int get_power() const override;
+
+    [[nodiscard]] int get_weight() const override;
+
+    [[nodiscard]] std::string get_short_name() const override;
+
+    [[nodiscard]] std::string get_name() const override;
+
+    [[nodiscard]] QString get_description() const override;
+};

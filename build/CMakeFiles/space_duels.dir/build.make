@@ -69,10 +69,22 @@ include CMakeFiles/space_duels.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/space_duels.dir/flags.make
 
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/resources.qrc
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Turret_1.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Thruster_1.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Thruster_2.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Hub_1.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/battle_bg.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/texture_error.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for resources.qrc"
+	/usr/bin/cmake -E cmake_autorcc /home/aster/dev/cpp/Space_Duels/build/CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json 
+
 CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o: space_duels_autogen/mocs_compilation.cpp
 CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o -MF CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o -c /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/mocs_compilation.cpp
 
 CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.i: cmake_force
@@ -86,7 +98,7 @@ CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.s: cmake_for
 CMakeFiles/space_duels.dir/src/bots.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/src/bots.cpp.o: /home/aster/dev/cpp/Space_Duels/src/bots.cpp
 CMakeFiles/space_duels.dir/src/bots.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/space_duels.dir/src/bots.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/space_duels.dir/src/bots.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/src/bots.cpp.o -MF CMakeFiles/space_duels.dir/src/bots.cpp.o.d -o CMakeFiles/space_duels.dir/src/bots.cpp.o -c /home/aster/dev/cpp/Space_Duels/src/bots.cpp
 
 CMakeFiles/space_duels.dir/src/bots.cpp.i: cmake_force
@@ -100,7 +112,7 @@ CMakeFiles/space_duels.dir/src/bots.cpp.s: cmake_force
 CMakeFiles/space_duels.dir/src/Card.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/src/Card.cpp.o: /home/aster/dev/cpp/Space_Duels/src/Card.cpp
 CMakeFiles/space_duels.dir/src/Card.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/space_duels.dir/src/Card.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/space_duels.dir/src/Card.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/src/Card.cpp.o -MF CMakeFiles/space_duels.dir/src/Card.cpp.o.d -o CMakeFiles/space_duels.dir/src/Card.cpp.o -c /home/aster/dev/cpp/Space_Duels/src/Card.cpp
 
 CMakeFiles/space_duels.dir/src/Card.cpp.i: cmake_force
@@ -114,7 +126,7 @@ CMakeFiles/space_duels.dir/src/Card.cpp.s: cmake_force
 CMakeFiles/space_duels.dir/src/globals.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/src/globals.cpp.o: /home/aster/dev/cpp/Space_Duels/src/globals.cpp
 CMakeFiles/space_duels.dir/src/globals.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/space_duels.dir/src/globals.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/space_duels.dir/src/globals.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/src/globals.cpp.o -MF CMakeFiles/space_duels.dir/src/globals.cpp.o.d -o CMakeFiles/space_duels.dir/src/globals.cpp.o -c /home/aster/dev/cpp/Space_Duels/src/globals.cpp
 
 CMakeFiles/space_duels.dir/src/globals.cpp.i: cmake_force
@@ -128,7 +140,7 @@ CMakeFiles/space_duels.dir/src/globals.cpp.s: cmake_force
 CMakeFiles/space_duels.dir/src/main.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/src/main.cpp.o: /home/aster/dev/cpp/Space_Duels/src/main.cpp
 CMakeFiles/space_duels.dir/src/main.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/space_duels.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/space_duels.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/src/main.cpp.o -MF CMakeFiles/space_duels.dir/src/main.cpp.o.d -o CMakeFiles/space_duels.dir/src/main.cpp.o -c /home/aster/dev/cpp/Space_Duels/src/main.cpp
 
 CMakeFiles/space_duels.dir/src/main.cpp.i: cmake_force
@@ -142,7 +154,7 @@ CMakeFiles/space_duels.dir/src/main.cpp.s: cmake_force
 CMakeFiles/space_duels.dir/src/Ship.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/src/Ship.cpp.o: /home/aster/dev/cpp/Space_Duels/src/Ship.cpp
 CMakeFiles/space_duels.dir/src/Ship.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/space_duels.dir/src/Ship.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/space_duels.dir/src/Ship.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/src/Ship.cpp.o -MF CMakeFiles/space_duels.dir/src/Ship.cpp.o.d -o CMakeFiles/space_duels.dir/src/Ship.cpp.o -c /home/aster/dev/cpp/Space_Duels/src/Ship.cpp
 
 CMakeFiles/space_duels.dir/src/Ship.cpp.i: cmake_force
@@ -156,7 +168,7 @@ CMakeFiles/space_duels.dir/src/Ship.cpp.s: cmake_force
 CMakeFiles/space_duels.dir/src/utils.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/src/utils.cpp.o: /home/aster/dev/cpp/Space_Duels/src/utils.cpp
 CMakeFiles/space_duels.dir/src/utils.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/space_duels.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/space_duels.dir/src/utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/src/utils.cpp.o -MF CMakeFiles/space_duels.dir/src/utils.cpp.o.d -o CMakeFiles/space_duels.dir/src/utils.cpp.o -c /home/aster/dev/cpp/Space_Duels/src/utils.cpp
 
 CMakeFiles/space_duels.dir/src/utils.cpp.i: cmake_force
@@ -170,7 +182,7 @@ CMakeFiles/space_duels.dir/src/utils.cpp.s: cmake_force
 CMakeFiles/space_duels.dir/src/ShipView.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/src/ShipView.cpp.o: /home/aster/dev/cpp/Space_Duels/src/ShipView.cpp
 CMakeFiles/space_duels.dir/src/ShipView.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/space_duels.dir/src/ShipView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/space_duels.dir/src/ShipView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/src/ShipView.cpp.o -MF CMakeFiles/space_duels.dir/src/ShipView.cpp.o.d -o CMakeFiles/space_duels.dir/src/ShipView.cpp.o -c /home/aster/dev/cpp/Space_Duels/src/ShipView.cpp
 
 CMakeFiles/space_duels.dir/src/ShipView.cpp.i: cmake_force
@@ -181,6 +193,20 @@ CMakeFiles/space_duels.dir/src/ShipView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space_duels.dir/src/ShipView.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aster/dev/cpp/Space_Duels/src/ShipView.cpp -o CMakeFiles/space_duels.dir/src/ShipView.cpp.s
 
+CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/space_duels.dir/flags.make
+CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o: space_duels_autogen/EWIEGA46WW/qrc_resources.cpp
+CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp
+
+CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp > CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp -o CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 # Object files for target space_duels
 space_duels_OBJECTS = \
 "CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o" \
@@ -190,7 +216,8 @@ space_duels_OBJECTS = \
 "CMakeFiles/space_duels.dir/src/main.cpp.o" \
 "CMakeFiles/space_duels.dir/src/Ship.cpp.o" \
 "CMakeFiles/space_duels.dir/src/utils.cpp.o" \
-"CMakeFiles/space_duels.dir/src/ShipView.cpp.o"
+"CMakeFiles/space_duels.dir/src/ShipView.cpp.o" \
+"CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target space_duels
 space_duels_EXTERNAL_OBJECTS =
@@ -203,6 +230,7 @@ bin/space_duels: CMakeFiles/space_duels.dir/src/main.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/src/Ship.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/src/utils.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/src/ShipView.cpp.o
+bin/space_duels: CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/build.make
 bin/space_duels: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 bin/space_duels: /usr/lib/x86_64-linux-gnu/libcurses.so
@@ -212,7 +240,7 @@ bin/space_duels: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 bin/space_duels: /usr/lib/x86_64-linux-gnu/libGLX.so
 bin/space_duels: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 bin/space_duels: CMakeFiles/space_duels.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable bin/space_duels"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bin/space_duels"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/space_duels.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -223,7 +251,7 @@ CMakeFiles/space_duels.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/space_duels.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/space_duels.dir/clean
 
-CMakeFiles/space_duels.dir/depend:
+CMakeFiles/space_duels.dir/depend: space_duels_autogen/EWIEGA46WW/qrc_resources.cpp
 	cd /home/aster/dev/cpp/Space_Duels/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aster/dev/cpp/Space_Duels /home/aster/dev/cpp/Space_Duels /home/aster/dev/cpp/Space_Duels/build /home/aster/dev/cpp/Space_Duels/build /home/aster/dev/cpp/Space_Duels/build/CMakeFiles/space_duels.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/space_duels.dir/depend
 

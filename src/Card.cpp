@@ -152,3 +152,36 @@ QString Thruster::get_description() const {
         "A Rank 1 Thruster supports 3 other cards."
     };
 }
+
+// Wall ------------------------------------------------------------------------
+
+Wall::Wall(const int rank) {
+    this->rank = rank;
+}
+
+int Wall::get_power() const {
+    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
+        return rank_to_power.at(rank - 1);
+    }
+    std::cerr << "Rank should only be 1 - 3";
+    return 0;
+}
+
+int Wall::get_weight() const {
+    return 1;
+}
+
+std::string Wall::get_name() const {
+    return "Wall";
+}
+
+std::string Wall::get_short_name() const {
+    return "Wal";
+}
+
+QString Wall::get_description() const {
+    return {
+        "The Wall is the most basic type of defense. Rank 1 is stable, Rank 2 is resistant and super stable,"
+        "and Rank 3 is super resistant and ultra stable."
+    };
+}

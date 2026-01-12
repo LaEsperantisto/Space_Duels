@@ -142,6 +142,30 @@ space_duels_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_duels_autogen.dir/build.make CMakeFiles/space_duels_autogen.dir/build
 .PHONY : space_duels_autogen/fast
 
+space_duels_autogen/EWIEGA46WW/qrc_resources.o: space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : space_duels_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_duels.dir/build.make CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+space_duels_autogen/EWIEGA46WW/qrc_resources.i: space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : space_duels_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_duels.dir/build.make CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+space_duels_autogen/EWIEGA46WW/qrc_resources.s: space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : space_duels_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_duels.dir/build.make CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 space_duels_autogen/mocs_compilation.o: space_duels_autogen/mocs_compilation.cpp.o
 .PHONY : space_duels_autogen/mocs_compilation.o
 
@@ -344,6 +368,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... space_duels_autogen"
 	@echo "... space_duels"
+	@echo "... space_duels_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... space_duels_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... space_duels_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... space_duels_autogen/mocs_compilation.o"
 	@echo "... space_duels_autogen/mocs_compilation.i"
 	@echo "... space_duels_autogen/mocs_compilation.s"
