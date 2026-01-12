@@ -5,8 +5,9 @@
 // Card ------------------------------------------------------------------------
 
 QPixmap Card::get_texture() const {
-    if (QPixmap pixmap(QString(":/gfx/%1.png")
-            .arg(QString::fromStdString(get_name())));
+    if (QPixmap pixmap(QString(":/gfx/%1_%2.png")
+            .arg(QString::fromStdString(get_name()))
+            .arg(get_rank()));
         !pixmap.isNull()) {
         return pixmap;
     }
@@ -134,7 +135,7 @@ int Thruster::get_power() const {
 }
 
 int Thruster::get_weight() const {
-    return -3;
+    return rank_to_weight.at(rank - 1);
 }
 
 std::string Thruster::get_name() const {

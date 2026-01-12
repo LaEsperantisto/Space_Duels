@@ -1,8 +1,10 @@
 <RCC>
     <qresource prefix="/">
-        <file>gfx/Hub.png</file>
-        <file>gfx/Turret.png</file>
-        <file>gfx/Thruster.png</file>
+        <file>gfx/Hub_1.png</file>
+        <file>gfx/Turret_1.png</file>
+        <file>gfx/Thruster_1.png</file>
+        <file>gfx/Thruster_2.png</file>
+        <file>gfx/battle_bg.png</file>
         <file>gfx/texture_error.png</file>
     </qresource>
 </RCC>

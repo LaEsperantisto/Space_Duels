@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 	// qDebug() << bot2.is_legal();
 	// qDebug() << bot3.is_legal();
 
-	view.setShips(bot1, bot3);
+	view.setShips(bot2, bot1);
 
 	view.setWindowState(Qt::WindowMaximized);
 	view.show();

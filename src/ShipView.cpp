@@ -18,8 +18,12 @@ void ShipView::paintEvent(QPaintEvent *) {
 	// qDebug() << "paintEvent called";
 
 	QPainter painter(this);
-	painter.fillRect(rect(), Qt::black);
 
+	if (const QPixmap bg(QString(":gfx/battle_bg.png")); bg.isNull()) {
+		painter.fillRect(rect(), Qt::black);
+	} else {
+		painter.drawPixmap(0, 0, bg);
+	}
 	draw_ships(painter, ship1, ship2, this, mouse_pos);
 }
 

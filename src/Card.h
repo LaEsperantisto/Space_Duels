@@ -99,6 +99,12 @@ private:
         2,
     };
 
+    static constexpr std::array<int, 3> rank_to_weight = {
+        -3,
+        -5,
+        -8,
+    };
+
 public:
     explicit Thruster(int rank);
 

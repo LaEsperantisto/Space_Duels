@@ -9,9 +9,11 @@
 	"INCLUDE_DIR" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug/space_duels_autogen/include",
 	"INPUTS" : 
 	[
-		"/home/aster/dev/cpp/Space_Duels/gfx/Turret.png",
-		"/home/aster/dev/cpp/Space_Duels/gfx/Hub.png",
-		"/home/aster/dev/cpp/Space_Duels/gfx/Thruster.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Turret_1.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Thruster_1.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Thruster_2.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/Hub_1.png",
+		"/home/aster/dev/cpp/Space_Duels/gfx/battle_bg.png",
 		"/home/aster/dev/cpp/Space_Duels/gfx/texture_error.png"
 	],
 	"LOCK_FILE" : "/home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
