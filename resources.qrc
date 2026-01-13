@@ -18,6 +18,7 @@
         <file>gfx/Round_swallower_1.png</file>
 
         <file>gfx/battle_bg.png</file>
+        <file>gfx/menu_bg.png</file>
         <file>gfx/texture_error.png</file>
     </qresource>
 </RCC>

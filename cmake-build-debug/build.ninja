@@ -121,6 +121,15 @@ build CMakeFiles/space_duels.dir/src/ShipView.cpp.o: CXX_COMPILER__space_duels_u
   OBJECT_DIR = CMakeFiles/space_duels.dir
   OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
 
+build CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/src/MenuWindow.cpp || cmake_object_order_depends_target_space_duels
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fPIC
+  INCLUDES = -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/space_duels_autogen/include -I/home/aster/dev/cpp/Space_Duels/cmake-build-debug/generated -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui
+  OBJECT_DIR = CMakeFiles/space_duels.dir
+  OBJECT_FILE_DIR = CMakeFiles/space_duels.dir/src
+
 build CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o: CXX_COMPILER__space_duels_unscanned_Debug /home/aster/dev/cpp/Space_Duels/cmake-build-debug/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp || cmake_object_order_depends_target_space_duels
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
@@ -138,7 +147,7 @@ build CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cp
 #############################################
 # Link the executable bin/space_duels
 
-build bin/space_duels: CXX_EXECUTABLE_LINKER__space_duels_Debug CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o CMakeFiles/space_duels.dir/src/bots.cpp.o CMakeFiles/space_duels.dir/src/Card.cpp.o CMakeFiles/space_duels.dir/src/globals.cpp.o CMakeFiles/space_duels.dir/src/main.cpp.o CMakeFiles/space_duels.dir/src/Ship.cpp.o CMakeFiles/space_duels.dir/src/utils.cpp.o CMakeFiles/space_duels.dir/src/ShipView.cpp.o CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || space_duels_autogen space_duels_autogen_timestamp_deps
+build bin/space_duels: CXX_EXECUTABLE_LINKER__space_duels_Debug CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o CMakeFiles/space_duels.dir/src/bots.cpp.o CMakeFiles/space_duels.dir/src/Card.cpp.o CMakeFiles/space_duels.dir/src/globals.cpp.o CMakeFiles/space_duels.dir/src/main.cpp.o CMakeFiles/space_duels.dir/src/Ship.cpp.o CMakeFiles/space_duels.dir/src/utils.cpp.o CMakeFiles/space_duels.dir/src/ShipView.cpp.o CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || space_duels_autogen space_duels_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
@@ -198,7 +207,7 @@ build space_duels_autogen/timestamp space_duels_autogen/mocs_compilation.cpp | $
 #############################################
 # Custom command for space_duels_autogen/EWIEGA46WW/qrc_resources.cpp
 
-build space_duels_autogen/EWIEGA46WW/qrc_resources.cpp | ${cmake_ninja_workdir}space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: CUSTOM_COMMAND /home/aster/dev/cpp/Space_Duels/resources.qrc CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json /home/aster/dev/cpp/Space_Duels/gfx/Hub_2.png /home/aster/dev/cpp/Space_Duels/gfx/Round_swallower_1.png /home/aster/dev/cpp/Space_Duels/gfx/Turret_1.png /home/aster/dev/cpp/Space_Duels/gfx/Wall_1.png /home/aster/dev/cpp/Space_Duels/gfx/Turret_2.png /home/aster/dev/cpp/Space_Duels/gfx/Thruster_1.png /home/aster/dev/cpp/Space_Duels/gfx/Turret_3.png /home/aster/dev/cpp/Space_Duels/gfx/Relay_1.png /home/aster/dev/cpp/Space_Duels/gfx/Thruster_3.png /home/aster/dev/cpp/Space_Duels/gfx/Thruster_2.png /home/aster/dev/cpp/Space_Duels/gfx/Hub_1.png /home/aster/dev/cpp/Space_Duels/gfx/battle_bg.png /home/aster/dev/cpp/Space_Duels/gfx/texture_error.png /usr/lib/qt6/libexec/rcc /usr/lib/qt6/libexec/rcc || space_duels_autogen space_duels_autogen_timestamp_deps
+build space_duels_autogen/EWIEGA46WW/qrc_resources.cpp | ${cmake_ninja_workdir}space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: CUSTOM_COMMAND /home/aster/dev/cpp/Space_Duels/resources.qrc CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json /home/aster/dev/cpp/Space_Duels/gfx/Hub_2.png /home/aster/dev/cpp/Space_Duels/gfx/Round_swallower_1.png /home/aster/dev/cpp/Space_Duels/gfx/Turret_1.png /home/aster/dev/cpp/Space_Duels/gfx/Wall_1.png /home/aster/dev/cpp/Space_Duels/gfx/Turret_2.png /home/aster/dev/cpp/Space_Duels/gfx/Thruster_1.png /home/aster/dev/cpp/Space_Duels/gfx/Turret_3.png /home/aster/dev/cpp/Space_Duels/gfx/Relay_1.png /home/aster/dev/cpp/Space_Duels/gfx/Thruster_3.png /home/aster/dev/cpp/Space_Duels/gfx/Thruster_2.png /home/aster/dev/cpp/Space_Duels/gfx/Hub_1.png /home/aster/dev/cpp/Space_Duels/gfx/battle_bg.png /home/aster/dev/cpp/Space_Duels/gfx/menu_bg.png /home/aster/dev/cpp/Space_Duels/gfx/texture_error.png /usr/lib/qt6/libexec/rcc /usr/lib/qt6/libexec/rcc || space_duels_autogen space_duels_autogen_timestamp_deps
   COMMAND = cd /home/aster/dev/cpp/Space_Duels/cmake-build-debug && /home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/bin/cmake -E cmake_autorcc /home/aster/dev/cpp/Space_Duels/cmake-build-debug/CMakeFiles/space_duels_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug
   DESC = Automatic RCC for resources.qrc
   restat = 1

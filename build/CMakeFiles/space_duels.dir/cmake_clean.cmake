@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/space_duels.dir/src/Card.cpp.o"
   "CMakeFiles/space_duels.dir/src/Card.cpp.o.d"
+  "CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o"
+  "CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o.d"
   "CMakeFiles/space_duels.dir/src/Ship.cpp.o"
   "CMakeFiles/space_duels.dir/src/Ship.cpp.o.d"
   "CMakeFiles/space_duels.dir/src/ShipView.cpp.o"

@@ -83,6 +83,7 @@ space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duel
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Thruster_2.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/Hub_1.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/battle_bg.png
+space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/menu_bg.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /home/aster/dev/cpp/Space_Duels/gfx/texture_error.png
 space_duels_autogen/EWIEGA46WW/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for resources.qrc"
@@ -200,10 +201,24 @@ CMakeFiles/space_duels.dir/src/ShipView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space_duels.dir/src/ShipView.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aster/dev/cpp/Space_Duels/src/ShipView.cpp -o CMakeFiles/space_duels.dir/src/ShipView.cpp.s
 
+CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o: CMakeFiles/space_duels.dir/flags.make
+CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o: /home/aster/dev/cpp/Space_Duels/src/MenuWindow.cpp
+CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o -MF CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o.d -o CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o -c /home/aster/dev/cpp/Space_Duels/src/MenuWindow.cpp
+
+CMakeFiles/space_duels.dir/src/MenuWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space_duels.dir/src/MenuWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aster/dev/cpp/Space_Duels/src/MenuWindow.cpp > CMakeFiles/space_duels.dir/src/MenuWindow.cpp.i
+
+CMakeFiles/space_duels.dir/src/MenuWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space_duels.dir/src/MenuWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aster/dev/cpp/Space_Duels/src/MenuWindow.cpp -o CMakeFiles/space_duels.dir/src/MenuWindow.cpp.s
+
 CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/space_duels.dir/flags.make
 CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o: space_duels_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/space_duels.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp
 
 CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -224,6 +239,7 @@ space_duels_OBJECTS = \
 "CMakeFiles/space_duels.dir/src/Ship.cpp.o" \
 "CMakeFiles/space_duels.dir/src/utils.cpp.o" \
 "CMakeFiles/space_duels.dir/src/ShipView.cpp.o" \
+"CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o" \
 "CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target space_duels
@@ -237,6 +253,7 @@ bin/space_duels: CMakeFiles/space_duels.dir/src/main.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/src/Ship.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/src/utils.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/src/ShipView.cpp.o
+bin/space_duels: CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o
 bin/space_duels: CMakeFiles/space_duels.dir/build.make
 bin/space_duels: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
@@ -247,7 +264,7 @@ bin/space_duels: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 bin/space_duels: /usr/lib/x86_64-linux-gnu/libGLX.so
 bin/space_duels: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 bin/space_duels: CMakeFiles/space_duels.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bin/space_duels"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aster/dev/cpp/Space_Duels/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable bin/space_duels"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/space_duels.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

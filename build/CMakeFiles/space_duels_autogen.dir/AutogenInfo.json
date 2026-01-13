@@ -196,6 +196,12 @@
 			null
 		],
 		[
+			"/home/aster/dev/cpp/Space_Duels/src/MenuWindow.h",
+			"MU",
+			"UVLADIE3JM/moc_MenuWindow.cpp",
+			null
+		],
+		[
 			"/home/aster/dev/cpp/Space_Duels/src/Ship.h",
 			"MU",
 			"UVLADIE3JM/moc_Ship.cpp",
@@ -285,6 +291,7 @@
 	"SOURCES" : 
 	[
 		[ "/home/aster/dev/cpp/Space_Duels/src/Card.cpp", "MU", null ],
+		[ "/home/aster/dev/cpp/Space_Duels/src/MenuWindow.cpp", "MU", null ],
 		[ "/home/aster/dev/cpp/Space_Duels/src/Ship.cpp", "MU", null ],
 		[ "/home/aster/dev/cpp/Space_Duels/src/ShipView.cpp", "MU", null ],
 		[ "/home/aster/dev/cpp/Space_Duels/src/bots.cpp", "MU", null ],

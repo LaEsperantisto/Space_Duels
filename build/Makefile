@@ -214,6 +214,30 @@ src/Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_duels.dir/build.make CMakeFiles/space_duels.dir/src/Card.cpp.s
 .PHONY : src/Card.cpp.s
 
+src/MenuWindow.o: src/MenuWindow.cpp.o
+.PHONY : src/MenuWindow.o
+
+# target to build an object file
+src/MenuWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_duels.dir/build.make CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o
+.PHONY : src/MenuWindow.cpp.o
+
+src/MenuWindow.i: src/MenuWindow.cpp.i
+.PHONY : src/MenuWindow.i
+
+# target to preprocess a source file
+src/MenuWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_duels.dir/build.make CMakeFiles/space_duels.dir/src/MenuWindow.cpp.i
+.PHONY : src/MenuWindow.cpp.i
+
+src/MenuWindow.s: src/MenuWindow.cpp.s
+.PHONY : src/MenuWindow.s
+
+# target to generate assembly for a file
+src/MenuWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_duels.dir/build.make CMakeFiles/space_duels.dir/src/MenuWindow.cpp.s
+.PHONY : src/MenuWindow.cpp.s
+
 src/Ship.o: src/Ship.cpp.o
 .PHONY : src/Ship.o
 
@@ -377,6 +401,9 @@ help:
 	@echo "... src/Card.o"
 	@echo "... src/Card.i"
 	@echo "... src/Card.s"
+	@echo "... src/MenuWindow.o"
+	@echo "... src/MenuWindow.i"
+	@echo "... src/MenuWindow.s"
 	@echo "... src/Ship.o"
 	@echo "... src/Ship.i"
 	@echo "... src/Ship.s"

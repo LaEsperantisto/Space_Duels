@@ -1,41 +1,25 @@
 #include "bots.h"
 #include "ShipView.h"
+#include "MenuWindow.h"  // Your renamed GameWindow
 #include "../generated/version.h"
 
 #include <QApplication>
-#include <QStackedWidget>
-#include <QLabel>
-
+#include <QDebug>
 
 int main(int argc, char *argv[]) {
-	// qputenv("QT_QPA_PLATFORM", "xcb");
-
 	qDebug() << "Program started";
 
+	// ReSharper disable once CppLocalVariableWithNonTrivialDtorIsNeverUsed
 	QApplication app(argc, argv);
 	QCoreApplication::setApplicationName("Space Duels");
 
-	ShipView view;
 
-	view.setWindowFlags(Qt::Window | Qt::WindowTitleHint | Qt::WindowSystemMenuHint);
+	MenuWindow menu;
+	menu.setWindowTitle(QString("Space Duels %1").arg(SPACE_DUELS_VERSION));
 
-	view.setWindowTitle(QString("Space Duels %1").arg(SPACE_DUELS_VERSION));
+	menu.setWindowState(Qt::WindowMaximized);
+	menu.show();
 
-
-	view.setShips(bots.at(4), bots.at(5));
-
-
-	auto *stack = new QStackedWidget();
-	stack->addWidget(&view); // your ShipView
-	stack->addWidget(new QLabel("Hello, this is a new screen"));
-
-	// Show the first screen
-	stack->setCurrentWidget(&view);
-	stack->setWindowState(Qt::WindowMaximized);
-	stack->show();
-
-	// Later, to switch to the second screen
-	// stack->setCurrentIndex(1);
 
 	return QApplication::exec();
 }

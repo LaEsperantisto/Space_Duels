@@ -234,7 +234,7 @@ int Round_swallower::get_weight() const {
 }
 
 std::string Round_swallower::get_name() const {
-    return "Round_swallower";
+    return "Round-swallower";
 }
 
 std::string Round_swallower::get_short_name() const {

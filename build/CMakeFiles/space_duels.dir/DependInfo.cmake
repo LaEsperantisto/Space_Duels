@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o" "gcc" "CMakeFiles/space_duels.dir/space_duels_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "/home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/mocs_compilation.cpp" "CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o.d"
   "/home/aster/dev/cpp/Space_Duels/src/Card.cpp" "CMakeFiles/space_duels.dir/src/Card.cpp.o" "gcc" "CMakeFiles/space_duels.dir/src/Card.cpp.o.d"
+  "/home/aster/dev/cpp/Space_Duels/src/MenuWindow.cpp" "CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o" "gcc" "CMakeFiles/space_duels.dir/src/MenuWindow.cpp.o.d"
   "/home/aster/dev/cpp/Space_Duels/src/Ship.cpp" "CMakeFiles/space_duels.dir/src/Ship.cpp.o" "gcc" "CMakeFiles/space_duels.dir/src/Ship.cpp.o.d"
   "/home/aster/dev/cpp/Space_Duels/src/ShipView.cpp" "CMakeFiles/space_duels.dir/src/ShipView.cpp.o" "gcc" "CMakeFiles/space_duels.dir/src/ShipView.cpp.o.d"
   "/home/aster/dev/cpp/Space_Duels/src/bots.cpp" "CMakeFiles/space_duels.dir/src/bots.cpp.o" "gcc" "CMakeFiles/space_duels.dir/src/bots.cpp.o.d"
