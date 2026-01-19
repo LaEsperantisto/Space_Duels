@@ -2,9 +2,11 @@
 
 #include <vector>
 #include <memory>
+#include <set>
 
 #include "Card.h"
 
+class Round;
 using CardPtr = std::shared_ptr<Card>;
 using CardVec2D = std::vector<std::vector<CardPtr> >;
 using CardInitList2D = std::initializer_list<std::initializer_list<CardPtr> >;
@@ -26,7 +28,7 @@ private:
     void update_weight_count();
 
 public:
-    Ship(CardVec2D cards);
+    explicit Ship(CardVec2D cards);
 
     // Ship(CardInitList2D &cards);
 
@@ -39,13 +41,19 @@ public:
     // void set_cards(CardVec2D &cards);
 
     void add_column_front();
+
     void add_column_back();
+
     void remove_column_front();
+
     void remove_column_back();
 
     void add_row_top();
+
     void add_row_bottom();
+
     void remove_row_top();
+
     void remove_row_bottom();
 
     [[nodiscard]]
@@ -61,4 +69,10 @@ public:
     bool is_legal() const;
 
     void update_data();
+
+    void change_card(int x, int y, const CardPtr &card);
+
+    [[nodiscard]] int get_col_power(int x) const;
+
+    [[nodiscard]] std::set<Round *> get_col_rounds(int x) const;
 };

@@ -1,6 +1,7 @@
 #include "Card.h"
 
 #include <iostream>
+#include <utility>
 
 // Card ------------------------------------------------------------------------
 
@@ -21,6 +22,10 @@ QString Card::get_details() const {
             .arg(get_rank());
 }
 
+std::shared_ptr<Card> Card::get_flipped_card() const {
+    return std::make_shared<Empty>();
+}
+
 // Hub ------------------------------------------------------------------------
 
 Hub::Hub(const int rank) {
@@ -28,7 +33,7 @@ Hub::Hub(const int rank) {
 }
 
 int Hub::get_power() const {
-    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
+    if (this->rank > 0 && this->rank <= static_cast<int>(rank_to_power.size())) {
         return rank_to_power.at(rank - 1);
     }
     std::cerr << "Rank should only be 1 - 3";
@@ -83,7 +88,7 @@ Turret::Turret(const int rank, const int level) {
 }
 
 int Turret::get_power() const {
-    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
+    if (this->rank > 0 && this->rank <= static_cast<int>(rank_to_power.size())) {
         return rank_to_power.at(rank - 1) + this->level;
     }
     std::cerr << "Rank should only be 1 - 3";
@@ -127,7 +132,7 @@ Thruster::Thruster(const int rank) {
 }
 
 int Thruster::get_power() const {
-    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
+    if (this->rank > 0 && this->rank <= static_cast<int>(rank_to_power.size())) {
         return rank_to_power.at(rank - 1);
     }
     std::cerr << "Rank should only be 1 - 3";
@@ -160,7 +165,7 @@ Wall::Wall(const int rank) {
 }
 
 int Wall::get_power() const {
-    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
+    if (this->rank > 0 && this->rank <= static_cast<int>(rank_to_power.size())) {
         return rank_to_power.at(rank - 1);
     }
     std::cerr << "Rank should only be 1 - 3";
@@ -193,7 +198,7 @@ Relay::Relay(const int rank) {
 }
 
 int Relay::get_power() const {
-    if (this->rank > 0 && this->rank <= rank_to_power.size()) {
+    if (this->rank > 0 && this->rank <= static_cast<int>(rank_to_power.size())) {
         return rank_to_power.at(rank - 1);
     }
     std::cerr << "Rank should only be 1 - 3";
@@ -248,4 +253,46 @@ QString Round_swallower::get_description() const {
         "Rounds, produces Explosive Round Energy). It can only produce energy when it \"becomes\" not intact; takes"
         "the initial hit."
     };
+}
+
+// Flipped ------------------------------------------------------------------------
+
+Flipped::Flipped(std::shared_ptr<Card> &card) : flipped_card(std::move(card)) {
+}
+
+int Flipped::get_power() const {
+    return 0;
+}
+
+int Flipped::get_weight() const {
+    return 1;
+}
+
+std::string Flipped::get_name() const {
+    return "Flipped-" + flipped_card->get_name();
+}
+
+QString Flipped::get_description() const {
+    return {"A Flipped card that has no Rank and no power, but can sometimes be restored."};
+}
+
+std::string Flipped::get_short_name() const {
+    return "Flp";
+}
+
+std::shared_ptr<Card> Flipped::get_flipped_card() const {
+    return flipped_card;
+}
+
+QPixmap Flipped::get_texture() const {
+    if (QPixmap pixmap(QString(":/gfx/Flipped-%1.png")
+            .arg(QString::fromStdString(flipped_card->get_name())));
+        !pixmap.isNull()) {
+        return pixmap;
+    }
+    return {":gfx/texture_error.png"};
+}
+
+inline bool Flipped::isFlipped() const {
+    return true;
 }

@@ -391,9 +391,12 @@ CMakeFiles/space_duels.dir/src/ShipView.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
- /home/aster/dev/cpp/Space_Duels/src/Ship.h \
+ /home/aster/dev/cpp/Space_Duels/src/Ship.h /usr/include/c++/12/set \
+ /usr/include/c++/12/bits/stl_set.h \
+ /usr/include/c++/12/bits/stl_multiset.h \
  /home/aster/dev/cpp/Space_Duels/src/Card.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+ /home/aster/dev/cpp/Space_Duels/src/Round.h \
  /home/aster/dev/cpp/Space_Duels/src/utils.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \

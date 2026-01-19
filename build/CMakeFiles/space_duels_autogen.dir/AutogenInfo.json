@@ -23,7 +23,6 @@
 		"/usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake",
 		"/usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake",
 		"/usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake",
-		"/home/aster/dev/cpp/Space_Duels/version.h.in",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake",
@@ -175,13 +174,6 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
-		"/usr/share/cmake-3.25/Modules/FindCurses.cmake",
-		"/usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake",
-		"/usr/share/cmake-3.25/Modules/FindPkgConfig.cmake",
-		"/usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake",
-		"/usr/share/cmake-3.25/Modules/FindPackageMessage.cmake",
-		"/usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake",
-		"/usr/share/cmake-3.25/Modules/FindPackageMessage.cmake",
 		"/home/aster/dev/cpp/Space_Duels/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/aster/dev/cpp/Space_Duels",
@@ -199,6 +191,12 @@
 			"/home/aster/dev/cpp/Space_Duels/src/MenuWindow.h",
 			"MU",
 			"UVLADIE3JM/moc_MenuWindow.cpp",
+			null
+		],
+		[
+			"/home/aster/dev/cpp/Space_Duels/src/Round.h",
+			"MU",
+			"UVLADIE3JM/moc_Round.cpp",
 			null
 		],
 		[
@@ -292,6 +290,7 @@
 	[
 		[ "/home/aster/dev/cpp/Space_Duels/src/Card.cpp", "MU", null ],
 		[ "/home/aster/dev/cpp/Space_Duels/src/MenuWindow.cpp", "MU", null ],
+		[ "/home/aster/dev/cpp/Space_Duels/src/Round.cpp", "MU", null ],
 		[ "/home/aster/dev/cpp/Space_Duels/src/Ship.cpp", "MU", null ],
 		[ "/home/aster/dev/cpp/Space_Duels/src/ShipView.cpp", "MU", null ],
 		[ "/home/aster/dev/cpp/Space_Duels/src/bots.cpp", "MU", null ],

@@ -7,6 +7,7 @@
         <file>gfx/Turret_2.png</file>
         <file>gfx/Turret_3.png</file>
 
+        <file>gfx/Flipped-Thruster.png</file>
         <file>gfx/Thruster_1.png</file>
         <file>gfx/Thruster_2.png</file>
         <file>gfx/Thruster_3.png</file>
@@ -15,7 +16,7 @@
 
         <file>gfx/Relay_1.png</file>
 
-        <file>gfx/Round_swallower_1.png</file>
+        <file>gfx/Round-swallower_1.png</file>
 
         <file>gfx/battle_bg.png</file>
         <file>gfx/menu_bg.png</file>

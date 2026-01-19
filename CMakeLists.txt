@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(Space_Duels
-        VERSION 0.1.1
+        VERSION 0.1.3
         LANGUAGES CXX
 )
 
@@ -20,19 +20,9 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 # -------------------------------
-# Generate version header
-# -------------------------------
-configure_file(
-        ${CMAKE_SOURCE_DIR}/version.h.in
-        ${CMAKE_BINARY_DIR}/generated/version.h
-        @ONLY
-)
-
-# -------------------------------
 # Dependencies
 # -------------------------------
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
-find_package(Curses REQUIRED)
 
 # -------------------------------
 # Executable
@@ -48,6 +38,8 @@ add_executable(space_duels
         resources.qrc
         src/MenuWindow.cpp
         src/MenuWindow.h
+        src/Round.cpp
+        src/Round.h
 )
 
 set_target_properties(space_duels PROPERTIES
@@ -59,7 +51,6 @@ set_target_properties(space_duels PROPERTIES
 # -------------------------------
 target_include_directories(space_duels
         PRIVATE
-        ${CURSES_INCLUDE_DIR}
         ${CMAKE_BINARY_DIR}/generated
 )
 
@@ -69,7 +60,6 @@ target_include_directories(space_duels
 target_link_libraries(space_duels
         PRIVATE
         Qt6::Widgets
-        ${CURSES_LIBRARIES}
 )
 
 # -------------------------------

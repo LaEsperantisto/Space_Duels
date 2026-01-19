@@ -6,6 +6,7 @@
 
 #include "bots.h"
 #include "globals.h"
+#include "utils.h"
 
 MenuWindow::MenuWindow(QWidget *parent)
 	: QWidget(parent),
@@ -41,10 +42,8 @@ void MenuWindow::paintEvent(QPaintEvent *) {
 
 	constexpr int padding = 6;
 
+	// Title
 	{
-		const int x = width() / 2 + title_top_left_x_offset;
-		const int y = height() / 2 + title_top_left_y_offset;
-
 		const QFont font("Consolas", 50);
 		painter.setFont(font);
 		const QFontMetrics fm(font);
@@ -52,8 +51,8 @@ void MenuWindow::paintEvent(QPaintEvent *) {
 		// ---------- title box ----------
 		const QRect titleTextRect = fm.boundingRect("Space Duels");
 		const QRect titleBox(
-			x,
-			y,
+			static_cast<int>(static_cast<float>(width()) / title_top_left_x_offset),
+			static_cast<int>(static_cast<float>(height()) / title_top_left_y_offset),
 			titleTextRect.width() + padding * 2 + 25,
 			titleTextRect.height() + padding * 2 + 25
 		);
@@ -68,18 +67,16 @@ void MenuWindow::paintEvent(QPaintEvent *) {
 		);
 	}
 
+	// Start button
 	{
-		const int x = width() / 2 + start_button_top_left_x_offset;
-		const int y = height() / 2 + start_button_top_left_y_offset;
-
-		const QFont font("Consolas", 10);
+		const QFont font("Consolas", 20);
 		painter.setFont(font);
 		const QFontMetrics fm(font);
 		// ---------- start box ----------
 		const QRect startTextRect = fm.boundingRect("Start Game");
 		const QRect startBox(
-			x,
-			y,
+			static_cast<int>(static_cast<float>(width()) / start_button_top_left_x_offset),
+			static_cast<int>(static_cast<float>(height()) / start_button_top_left_y_offset),
 			startTextRect.width() + padding * 2 + 5,
 			startTextRect.height() + padding * 2 + 5
 		);
@@ -109,7 +106,7 @@ void MenuWindow::createShipView() {
 	ship1 = bots.at(4);
 	ship2 = bots.at(5);
 
-	ship_view->setShips(ship1, ship2);
+	ship_view->setShips(duel_ships(ship1, ship2).first, ship2);
 }
 
 // ---------------- Slot ----------------

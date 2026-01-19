@@ -123,9 +123,6 @@
 			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake"
 		},
 		{
-			"path" : "version.h.in"
-		},
-		{
 			"isExternal" : true,
 			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake"
 		},
@@ -773,41 +770,6 @@
 		{
 			"isExternal" : true,
 			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindCurses.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPkgConfig.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/aster/dev/tools/clion-2025.2.5/bin/cmake/linux/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"path" : "resources.qrc"

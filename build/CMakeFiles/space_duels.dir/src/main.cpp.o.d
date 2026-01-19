@@ -195,7 +195,12 @@ CMakeFiles/space_duels.dir/src/main.cpp.o: \
  /usr/include/c++/12/bits/ranges_algobase.h \
  /usr/include/c++/12/bits/uses_allocator_args.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h \
+ /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/set \
+ /usr/include/c++/12/bits/stl_tree.h \
+ /usr/include/c++/12/bits/node_handle.h \
+ /usr/include/c++/12/bits/stl_set.h \
+ /usr/include/c++/12/bits/stl_multiset.h \
+ /usr/include/c++/12/bits/erase_if.h \
  /home/aster/dev/cpp/Space_Duels/src/Card.h /usr/include/c++/12/array \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -267,9 +272,8 @@ CMakeFiles/space_duels.dir/src/main.cpp.o: \
  /usr/include/c++/12/functional /usr/include/c++/12/bits/std_function.h \
  /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
  /usr/include/c++/12/bits/hashtable_policy.h \
- /usr/include/c++/12/bits/node_handle.h \
  /usr/include/c++/12/bits/unordered_map.h \
- /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/bits/stl_algo.h \
+ /usr/include/c++/12/bits/stl_algo.h \
  /usr/include/c++/12/bits/algorithmfwd.h \
  /usr/include/c++/12/bits/stl_heap.h \
  /usr/include/c++/12/bits/uniform_int_dist.h \
@@ -326,7 +330,7 @@ CMakeFiles/space_duels.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
  /usr/include/c++/12/list /usr/include/c++/12/bits/stl_list.h \
  /usr/include/c++/12/bits/list.tcc /usr/include/c++/12/map \
- /usr/include/c++/12/bits/stl_tree.h /usr/include/c++/12/bits/stl_map.h \
+ /usr/include/c++/12/bits/stl_map.h \
  /usr/include/c++/12/bits/stl_multimap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
@@ -334,6 +338,7 @@ CMakeFiles/space_duels.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
+ /home/aster/dev/cpp/Space_Duels/src/Round.h \
  /home/aster/dev/cpp/Space_Duels/src/ShipView.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
@@ -402,7 +407,6 @@ CMakeFiles/space_duels.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
- /home/aster/dev/cpp/Space_Duels/src/../generated/version.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \

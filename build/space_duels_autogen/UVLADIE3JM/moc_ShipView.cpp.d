@@ -1,6 +1,7 @@
 /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/UVLADIE3JM/moc_ShipView.cpp: /home/aster/dev/cpp/Space_Duels/src/ShipView.h \
   /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/moc_predefs.h \
   /home/aster/dev/cpp/Space_Duels/src/Card.h \
+  /home/aster/dev/cpp/Space_Duels/src/Round.h \
   /home/aster/dev/cpp/Space_Duels/src/Ship.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -89,10 +90,12 @@
   /usr/include/c++/12/bits/stl_list.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
+  /usr/include/c++/12/bits/stl_multiset.h \
   /usr/include/c++/12/bits/stl_numeric.h \
   /usr/include/c++/12/bits/stl_pair.h \
   /usr/include/c++/12/bits/stl_raw_storage_iter.h \
   /usr/include/c++/12/bits/stl_relops.h \
+  /usr/include/c++/12/bits/stl_set.h \
   /usr/include/c++/12/bits/stl_tempbuf.h \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/bits/stl_uninitialized.h \
@@ -150,6 +153,7 @@
   /usr/include/c++/12/pstl/glue_algorithm_defs.h \
   /usr/include/c++/12/pstl/glue_memory_defs.h \
   /usr/include/c++/12/pstl/glue_numeric_defs.h \
+  /usr/include/c++/12/set \
   /usr/include/c++/12/stdexcept \
   /usr/include/c++/12/streambuf \
   /usr/include/c++/12/string \

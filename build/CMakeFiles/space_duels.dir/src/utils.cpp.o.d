@@ -340,9 +340,12 @@ CMakeFiles/space_duels.dir/src/utils.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
- /home/aster/dev/cpp/Space_Duels/src/Ship.h \
+ /home/aster/dev/cpp/Space_Duels/src/Ship.h /usr/include/c++/12/set \
+ /usr/include/c++/12/bits/stl_set.h \
+ /usr/include/c++/12/bits/stl_multiset.h \
  /home/aster/dev/cpp/Space_Duels/src/Card.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+ /home/aster/dev/cpp/Space_Duels/src/Round.h \
  /home/aster/dev/cpp/Space_Duels/src/globals.h \
  /home/aster/dev/cpp/Space_Duels/src/ShipView.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \

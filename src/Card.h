@@ -4,6 +4,11 @@
 #include <array>
 
 #include <qpixmap.h>
+#include <set>
+
+#include "Round.h"
+
+class Round;
 
 class Card {
 protected:
@@ -20,6 +25,7 @@ public:
     [[nodiscard]] virtual std::string get_name() const = 0;
 
     [[nodiscard]] virtual bool isEmpty() const { return false; }
+    [[nodiscard]] virtual bool isFlipped() const { return false; }
     [[nodiscard]] virtual int get_weight() const { return 0; }
 
     [[nodiscard]] virtual QPixmap get_texture() const;
@@ -27,6 +33,10 @@ public:
     [[nodiscard]] virtual QString get_details() const;
 
     [[nodiscard]] virtual QString get_description() const { return {""}; }
+
+    [[nodiscard]] virtual std::shared_ptr<Card> get_flipped_card() const;
+
+    [[nodiscard]] virtual std::set<Round *> get_rounds() const { return {&Ballistic}; }
 };
 
 
@@ -178,4 +188,28 @@ public:
     [[nodiscard]] std::string get_name() const override;
 
     [[nodiscard]] QString get_description() const override;
+};
+
+class Flipped final : public Card {
+private:
+    std::shared_ptr<Card> flipped_card;
+
+public:
+    explicit Flipped(std::shared_ptr<Card> &card);
+
+    [[nodiscard]] int get_power() const override;
+
+    [[nodiscard]] int get_weight() const override;
+
+    [[nodiscard]] std::string get_short_name() const override;
+
+    [[nodiscard]] std::string get_name() const override;
+
+    [[nodiscard]] QString get_description() const override;
+
+    [[nodiscard]] std::shared_ptr<Card> get_flipped_card() const override;
+
+    [[nodiscard]] QPixmap get_texture() const override;
+
+    [[nodiscard]] inline bool isFlipped() const override;
 };

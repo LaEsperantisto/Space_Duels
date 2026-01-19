@@ -7,6 +7,8 @@
 #include <QPainter>
 #include <QString>
 
+#include "Round.h"
+
 void draw_ships(QPainter &painter,
                 const Ship &ship1,
                 const Ship &ship2,
@@ -57,9 +59,8 @@ void draw_ships(QPainter &painter,
     // ---------- Second ship ----------
     for (size_t x = 0; x < s2.size(); ++x) {
         for (size_t y = 0; y < s2.at(x).size(); ++y) {
-            const auto &card = s2.at(x).at(snd.get_height() - 1 - y);
-            if (!card->isEmpty()) {
-                const int drawX = x * card_width + x_offset;
+            if (const auto &card = s2.at(x).at(snd.get_height() - 1 - y); !card->isEmpty()) {
+                const int drawX = static_cast<int>(x) * card_width + x_offset;
                 const int drawY =
                         (y + gap_between_ships) * card_height +
                         fst.get_height() * card_height +
@@ -168,4 +169,29 @@ std::pair<int, int> get_card_scale(const int png_width, const int png_height, co
         wanted_width / png_width,
         wanted_height / png_height
     };
+}
+
+
+std::pair<Ship, Ship> duel_ships(const Ship &ship1, const Ship &ship2) {
+    auto [fst, snd] = align_ships(ship1, ship2);
+
+    const int width = static_cast<int>(fst.get_width());
+    for (int x = 0; x < width; x++) {
+        const int fst_power = fst.get_col_power(x);
+        const int snd_power = snd.get_col_power(x);
+
+        if (fst_power > snd_power) {
+            for (const auto round: fst.get_col_rounds(x)) {
+                round->hit(x, width - 1, fst, fst_power);
+            }
+        } else if (fst_power < snd_power) {
+            for (const auto round: snd.get_col_rounds(x)) {
+                round->hit(x, static_cast<int>(fst.get_height()) - 1, snd, snd_power);
+            }
+        }
+
+        qDebug() << "x: " << x;
+    }
+    Ballistic.hit(0, 0, fst, 20);
+    return std::make_pair(fst, snd);
 }

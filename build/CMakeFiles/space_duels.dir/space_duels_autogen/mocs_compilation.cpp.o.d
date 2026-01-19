@@ -403,6 +403,9 @@ CMakeFiles/space_duels.dir/space_duels_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
  /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/UVLADIE3JM/../../../src/Ship.h \
+ /usr/include/c++/12/set /usr/include/c++/12/bits/stl_set.h \
+ /usr/include/c++/12/bits/stl_multiset.h \
  /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/UVLADIE3JM/../../../src/Card.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+ /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/UVLADIE3JM/../../../src/Round.h \
  /home/aster/dev/cpp/Space_Duels/build/space_duels_autogen/UVLADIE3JM/moc_ShipView.cpp

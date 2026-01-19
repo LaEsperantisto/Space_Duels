@@ -1,2 +1,0 @@
-#pragma once
-#define SPACE_DUELS_VERSION "@PROJECT_VERSION@"
